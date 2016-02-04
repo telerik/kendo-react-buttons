@@ -1,3 +1,3 @@
-import KendoComponent from './kendo-component';
+import KendoButton from './kendo-button';
 
-module.exports = KendoComponent;
+module.exports = KendoButton;
