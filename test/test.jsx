@@ -16,22 +16,22 @@ describe('KendoButton', () => {
 
     it('should add k-primary if primary is true', () => {
         result = shallow(<KendoButton primary />);
-        expect(result.hasClass('k-primary'));
+        expect(result.hasClass('k-primary')).toBe(true);
     });
 
     it('should add k-button-icon if the button does not have text', () => {
         result = shallow(<KendoButton />);
-        expect(result.hasClass('k-button-icon'));
+        expect(result.hasClass('k-button-icon')).toBe(true);
     });
 
     it('should not add k-button-icon if the button has text', () => {
         result = shallow(<KendoButton>test</KendoButton>);
-        expect(result.hasClass('k-button-icon'));
+        expect(result.hasClass('k-button-icon')).toBe(false);
     });
 
     it('should not add k-state-disabled if disabled is true', () => {
         result = shallow(<KendoButton disabled >test</KendoButton>);
-        expect(result.hasClass('k-state-disabled'));
+        expect(result.hasClass('k-state-disabled')).toBe(true);
     });
 
     it('should add aria-disabled if disabled is true', () => {
@@ -42,27 +42,24 @@ describe('KendoButton', () => {
     it('should update k-state-active on click of a togglable button', () => {
         result = shallow(<KendoButton togglable >test</KendoButton>);
         result.simulate('click');
-        expect(result.hasClass('k-state-active'));
+        expect(result.hasClass('k-state-active')).toBe(true);
         result.simulate('click');
-        expect(!result.hasClass('k-state-active'));
+        expect(result.hasClass('k-state-active')).toBe(false);
     });
 
     it('should update component state on click of a togglable button', () => {
         result = shallow(<KendoButton togglable >test</KendoButton>);
         result.simulate('click');
-        expect(result.state('active'));
+        expect(result.state('active')).toBe(true);
         result.simulate('click');
-        expect(!result.state('active'));
+        expect(result.state('active')).toBe(false);
     });
 
     it('should execute click handler on click', () => {
-        let handlers = {
-            click: function() { }
-        };
-        spyOn(handlers, "click");
-        result = shallow(<KendoButton onClick={handlers.click}>test</KendoButton>);
+        let spy = jasmine.createSpy('spy');
+        result = shallow(<KendoButton onClick={spy}>test</KendoButton>);
         result.simulate('click');
-        expect(handlers.click.calls.any()).toBe(true);
+        expect(spy).toHaveBeenCalled();
     });
 
     it('should render span for the icon', () => {
@@ -89,8 +86,8 @@ describe('KendoButtonGroup', () => {
     });
     it('should add proper group classes to KendoButton elements', () => {
         let buttons = result.children();
-        expect(buttons.at(0).hasClass('k-group-start'));
-        expect(buttons.at(2).hasClass('k-group-end'));
+        expect(buttons.first().hasClass('k-group-start')).toBe(true);
+        expect(buttons.last().hasClass('k-group-end')).toBe(true);
     });
 
     it('should add disabled class if disabled is true', () => {
@@ -102,7 +99,7 @@ describe('KendoButtonGroup', () => {
             </KendoButtonGroup>
         );
 
-        expect(result.hasClass('k-state-disabled'));
+        expect(result.hasClass('k-state-disabled')).toBe(true);
     });
 
     it('should add aria-disabled attribute if disabled is true', () => {
