@@ -16,33 +16,43 @@ describe('KendoButton', () => {
 
     it('should add k-primary if primary is true', () => {
         result = shallow(<KendoButton primary />);
-        expect(result.props().className.indexOf('k-primary')).toBeGreaterThan(-1);
+        expect(result.hasClass('k-primary'));
     });
 
     it('should add k-button-icon if the button does not have text', () => {
         result = shallow(<KendoButton />);
-        expect(result.props().className.indexOf('k-button-icon')).toBeGreaterThan(-1);
+        expect(result.hasClass('k-button-icon'));
     });
 
     it('should not add k-button-icon if the button has text', () => {
-        result = shallow(<KendoButton >test</KendoButton>);
-        expect(result.props().className.indexOf('k-button-icon')).toEqual(-1);
+        result = shallow(<KendoButton>test</KendoButton>);
+        expect(result.hasClass('k-button-icon'));
     });
 
     it('should not add k-state-disabled if disabled is true', () => {
         result = shallow(<KendoButton disabled >test</KendoButton>);
-        expect(result.props().className.indexOf('k-state-disabled')).toBeGreaterThan(-1);
+        expect(result.hasClass('k-state-disabled'));
     });
 
     it('should add aria-disabled if disabled is true', () => {
         result = shallow(<KendoButton disabled >test</KendoButton>);
-        expect(result.props().hasOwnProperty('aria-disabled')).toBe(true);
+        expect(result.prop('aria-disabled')).toBe(true);
     });
 
     it('should update k-state-active on click of a togglable button', () => {
         result = shallow(<KendoButton togglable >test</KendoButton>);
         result.simulate('click');
-        expect(result.props().className.indexOf('k-state-active')).toBeGreaterThan(-1);
+        expect(result.hasClass('k-state-active'));
+        result.simulate('click');
+        expect(!result.hasClass('k-state-active'));
+    });
+
+    it('should update component state on click of a togglable button', () => {
+        result = shallow(<KendoButton togglable >test</KendoButton>);
+        result.simulate('click');
+        expect(result.state('active'));
+        result.simulate('click');
+        expect(!result.state('active'));
     });
 
     it('should execute click handler on click', () => {
@@ -72,16 +82,15 @@ describe('KendoButtonGroup', () => {
             </KendoButtonGroup>
         );
     });
-    
 
     it('should render KendoButton elements in a div', () => {
         expect(result.type()).toEqual('div');
         expect(result.find(KendoButton).length).toEqual(3);
     });
     it('should add proper group classes to KendoButton elements', () => {
-        let buttons = result.find(KendoButton);
-        expect(buttons.nodes[0].props.className.indexOf('k-group-start')).toBeGreaterThan(-1);
-        expect(buttons.nodes[2].props.className.indexOf('k-group-end')).toBeGreaterThan(-1);
+        let buttons = result.children();
+        expect(buttons.at(0).hasClass('k-group-start'));
+        expect(buttons.at(2).hasClass('k-group-end'));
     });
 
     it('should add disabled class if disabled is true', () => {
@@ -93,8 +102,7 @@ describe('KendoButtonGroup', () => {
             </KendoButtonGroup>
         );
 
-        let buttons = result.find(KendoButton);
-        expect(result.props().className.indexOf('k-state-disabled')).toBeGreaterThan(-1);
+        expect(result.hasClass('k-state-disabled'));
     });
 
     it('should add aria-disabled attribute if disabled is true', () => {
@@ -106,7 +114,6 @@ describe('KendoButtonGroup', () => {
             </KendoButtonGroup>
         );
 
-        let buttons = result.find(KendoButton);
-        expect(result.props().hasOwnProperty('aria-disabled')).toBe(true);
+        expect(result.prop('aria-disabled')).toBe(true);
     });
 });
