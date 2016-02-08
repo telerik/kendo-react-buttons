@@ -47,10 +47,22 @@ describe('KendoButton', () => {
         expect(result.hasClass('k-state-active')).toBe(false);
     });
 
+    it('should **not** update k-state-active on click of a disabled togglable button', () => {
+        result = shallow(<KendoButton disabled togglable >test</KendoButton>);
+        result.simulate('click');
+        expect(result.hasClass('k-state-active')).toBe(false);
+    });
+
     it('should update component state on click of a togglable button', () => {
         result = shallow(<KendoButton togglable >test</KendoButton>);
         result.simulate('click');
         expect(result.state('active')).toBe(true);
+        result.simulate('click');
+        expect(result.state('active')).toBe(false);
+    });
+
+    it('should **not** update component state on click of a togglable button', () => {
+        result = shallow(<KendoButton disabled togglable >test</KendoButton>);
         result.simulate('click');
         expect(result.state('active')).toBe(false);
     });
@@ -60,6 +72,13 @@ describe('KendoButton', () => {
         result = shallow(<KendoButton onClick={spy}>test</KendoButton>);
         result.simulate('click');
         expect(spy).toHaveBeenCalled();
+    });
+
+    it('should **not** execute click handler on click if component is disabled', () => {
+        let spy = jasmine.createSpy('spy');
+        result = shallow(<KendoButton disabled onClick={spy}>test</KendoButton>);
+        result.simulate('click');
+        expect(spy).not.toHaveBeenCalled();
     });
 
     it('should render span for the icon', () => {

@@ -10,6 +10,9 @@ export default class KendoButton extends React.Component {
         };
     }
     handleClick() {
+        if (this.props.disabled) {
+            return;
+        }
         if (this.props.togglable) {
             this.setState({ active: !this.state.active });
         }
