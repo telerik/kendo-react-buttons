@@ -34,6 +34,7 @@ export default class KendoButton extends React.Component {
             'k-state-active': this.state.active
         }, this.props.className);
         let buttonProps = {
+            role: 'button',
             className: buttonClasses,
             disabled: this.props.disabled,
             onClick: this.handleClick.bind(this),

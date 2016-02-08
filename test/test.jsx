@@ -34,11 +34,6 @@ describe('KendoButton', () => {
         expect(result.hasClass('k-state-disabled')).toBe(true);
     });
 
-    it('should add aria-disabled if disabled is true', () => {
-        result = shallow(<KendoButton disabled >test</KendoButton>);
-        expect(result.prop('aria-disabled')).toBe(true);
-    });
-
     it('should update k-state-active on click of a togglable button', () => {
         result = shallow(<KendoButton togglable >test</KendoButton>);
         result.simulate('click');
@@ -85,6 +80,23 @@ describe('KendoButton', () => {
         result = shallow(<KendoButton icon="refresh">test</KendoButton>);
         expect(result.find(KendoButtonIcon)).not.toBeUndefined();
     });
+});
+
+describe('KendoButton ARIA', () => {
+    let result;
+
+    beforeEach(() => { /* test setup */ });
+
+    it('should add role="button"', function() {
+        result = shallow(<KendoButton>test</KendoButton>);
+        expect(result.prop('role')).toBe('button');
+    });
+
+    it('should add aria-disabled if disabled is true', () => {
+        result = shallow(<KendoButton disabled >test</KendoButton>);
+        expect(result.prop('aria-disabled')).toBe(true);
+    });
+
 });
 
 describe('KendoButtonGroup', () => {
