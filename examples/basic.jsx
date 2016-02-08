@@ -1,7 +1,7 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom';
 import KendoButton from '../src/kendo-button';
-import KendoButtonGroup from '../src/kendo-react-buttongroup';
+import KendoButtonGroup from '../src/kendo-button-group';
 
 
 let state = {

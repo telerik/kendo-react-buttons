@@ -80,6 +80,16 @@ describe('KendoButton', () => {
         result = shallow(<KendoButton icon="refresh">test</KendoButton>);
         expect(result.find(KendoButtonIcon)).not.toBeUndefined();
     });
+
+    it('should add tabIndex', () => {
+        result = shallow(<KendoButton>test</KendoButton>);
+        expect(result.prop('tabIndex')).toBe(0);
+    });
+
+    it('should preserve set tabIndex prop', () => {
+        result = shallow(<KendoButton tabIndex={4}>test</KendoButton>);
+        expect(result.prop('tabIndex')).toBe(4);
+    });
 });
 
 describe('KendoButton ARIA', () => {

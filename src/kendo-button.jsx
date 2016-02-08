@@ -35,6 +35,7 @@ export default class KendoButton extends React.Component {
         }, this.props.className);
         let buttonProps = {
             role: 'button',
+            tabIndex: this.props.tabIndex || 0,
             className: buttonClasses,
             disabled: this.props.disabled,
             onClick: this.handleClick.bind(this),
@@ -47,7 +48,7 @@ export default class KendoButton extends React.Component {
             spriteCssClass: this.props.spriteCssClass
         };
         return (
-            <a href="#" {...buttonProps}>
+            <a {...buttonProps}>
             <KendoButtonIcon {...iconProps} />
             {this.props.children}
             </a>
@@ -67,5 +68,6 @@ KendoButton.propTypes = {
     onClick: React.PropTypes.func,
     primary: React.PropTypes.bool,
     spriteCssClass: React.PropTypes.string,
+    tabIndex: React.PropTypes.number,
     togglable: React.PropTypes.bool
 };
