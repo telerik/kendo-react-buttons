@@ -1,5 +1,6 @@
 import * as React from 'react';
 import classNames from 'classnames';
+import styles from '@telerik/kendo-theme-default/styles/button/main';
 import KendoButtonIcon from './kendo-button-icon';
 
 export default class KendoButton extends React.Component {
@@ -27,7 +28,7 @@ export default class KendoButton extends React.Component {
     }
     render() {
         let buttonClasses = classNames({
-            'k-button': true,
+            [styles.button]: true,
             'k-button-icon': this.props.children === undefined,
             'k-state-disabled': this.props.disabled,
             'k-primary': this.props.primary,
