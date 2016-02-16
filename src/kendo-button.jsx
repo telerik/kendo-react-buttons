@@ -1,14 +1,38 @@
-import * as React from 'react';
+import React, { PropTypes } from 'react';
 import classNames from 'classnames';
 import styles from '@telerik/kendo-theme-default/styles/button/main';
-import KendoButtonIcon from './kendo-button-icon';
 
-export default class KendoButton extends React.Component {
+function ButtonIcon({ imageUrl, icon, spriteCssClass }) {
+    const image = imageUrl ? (<img className="k-image" src={imageUrl} />) : null;
+    const iconClasses = icon ? `k-icon k-sprite k-i-${icon}` : spriteCssClass;
+    return <span className={iconClasses}>{image}</span>;
+}
+
+const propTypes = {
+    children: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.element),
+        PropTypes.string
+    ]),
+    className: PropTypes.string,
+    disabled: PropTypes.bool,
+    icon: PropTypes.string,
+    imageUrl: PropTypes.string,
+    onClick: PropTypes.func,
+    primary: PropTypes.bool,
+    spriteCssClass: PropTypes.string,
+    tabIndex: PropTypes.number,
+    togglable: PropTypes.bool
+};
+
+class KendoButton extends React.Component {
     constructor() {
         super();
         this.state = {
             active: false
         };
+
+        this.onClick = this.handleClick.bind(this);
+        this.onKeyPress = this.handleKeyPress.bind(this);
     }
     handleClick() {
         if (this.props.disabled) {
@@ -39,8 +63,8 @@ export default class KendoButton extends React.Component {
             tabIndex: this.props.tabIndex || 0,
             className: buttonClasses,
             disabled: this.props.disabled,
-            onClick: this.handleClick.bind(this),
-            onKeyPress: this.handleKeyPress.bind(this),
+            onClick: this.onClick,
+            onKeyPress: this.handleKeyPress,
             'aria-disabled': this.props.disabled
         };
         let iconProps = {
@@ -50,25 +74,13 @@ export default class KendoButton extends React.Component {
         };
         return (
             <a {...buttonProps}>
-            <KendoButtonIcon {...iconProps} />
-            {this.props.children}
+                <ButtonIcon {...iconProps} />
+                {this.props.children}
             </a>
         );
     }
 }
 
-KendoButton.propTypes = {
-    children: React.PropTypes.oneOfType([
-        React.PropTypes.arrayOf(React.PropTypes.element),
-        React.PropTypes.string
-    ]),
-    className: React.PropTypes.string,
-    disabled: React.PropTypes.bool,
-    icon: React.PropTypes.string,
-    imageUrl: React.PropTypes.string,
-    onClick: React.PropTypes.func,
-    primary: React.PropTypes.bool,
-    spriteCssClass: React.PropTypes.string,
-    tabIndex: React.PropTypes.number,
-    togglable: React.PropTypes.bool
-};
+KendoButton.propTypes = propTypes;
+
+export default KendoButton;

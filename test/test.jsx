@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { shallow } from 'enzyme';
 import KendoButton from '../src/kendo-button';
-import KendoButtonIcon from '../src/kendo-button-icon';
 import KendoButtonGroup from '../src/kendo-button-group';
 
 describe('KendoButton', () => {
@@ -74,16 +73,6 @@ describe('KendoButton', () => {
         result = shallow(<KendoButton disabled onClick={spy}>test</KendoButton>);
         result.simulate('click');
         expect(spy).not.toHaveBeenCalled();
-    });
-
-    it('should render span for the icon', () => {
-        result = shallow(<KendoButton icon="refresh">test</KendoButton>);
-        expect(result.find(KendoButtonIcon)).not.toBeUndefined();
-    });
-
-    it('should add tabIndex', () => {
-        result = shallow(<KendoButton>test</KendoButton>);
-        expect(result.prop('tabIndex')).toBe(0);
     });
 
     it('should preserve set tabIndex prop', () => {

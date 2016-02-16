@@ -1,8 +1,13 @@
-import * as React from 'react';
+import React, { PropTypes } from 'react';
 import KendoButton from './kendo-button';
 import classNames from 'classnames';
 
-export default class KendoButtonGroup extends React.Component {
+const propTypes = {
+    children: PropTypes.arrayOf(PropTypes.element),
+    disabled: PropTypes.bool
+};
+
+class KendoButtonGroup extends React.Component {
     constructor() {
         super();
     }
@@ -39,7 +44,6 @@ export default class KendoButtonGroup extends React.Component {
     }
 }
 
-KendoButtonGroup.propTypes = {
-    children: React.PropTypes.arrayOf(React.PropTypes.element),
-    disabled: React.PropTypes.bool
-};
+KendoButtonGroup.propTypes = propTypes;
+
+export default KendoButtonGroup;
