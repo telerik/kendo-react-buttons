@@ -75,6 +75,11 @@ describe('KendoButton', () => {
         expect(spy).not.toHaveBeenCalled();
     });
 
+    it('should add tabIndex', () => {
+        result = shallow(<KendoButton>test</KendoButton>);
+        expect(result.prop('tabIndex')).toBe(0);
+    });
+
     it('should preserve set tabIndex prop', () => {
         result = shallow(<KendoButton tabIndex={4}>test</KendoButton>);
         expect(result.prop('tabIndex')).toBe(4);
