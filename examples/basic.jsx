@@ -1,8 +1,6 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom';
-import KendoButton from '../src/kendo-button';
-import KendoButtonGroup from '../src/kendo-button-group';
-
+import { KendoButton, KendoButtonGroup } from '@telerik/kendo-react-button';
 
 let state = {
     disabled: true,
