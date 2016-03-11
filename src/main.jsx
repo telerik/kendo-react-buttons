@@ -1,7 +1,7 @@
-import KendoButton from './kendo-button';
-import KendoButtonGroup from './kendo-button-group';
+import Button from './Button';
+import ButtonGroup from './ButtonGroup';
 
 module.exports = {
-    KendoButton,
-    KendoButtonGroup
+    Button,
+    ButtonGroup
 };

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom';
-import { KendoButton, KendoButtonGroup } from '@telerik/kendo-react-button';
+import { Button, ButtonGroup } from '@telerik/kendo-react-buttons';
 
 let state = {
     disabled: true,
@@ -19,17 +19,17 @@ const render = () => {
     //Added k-toolbar to get the button-group stylings. Should be declared in the components SASS files
     let buttonInstance = (
         <div className='k-toolbar'>
-        <KendoButtonGroup>
-          <KendoButton
-            onClick={foo}
-            icon={state.icon}
-            togglable>
-                foo
-          </KendoButton>
+        <ButtonGroup>
+            <Button
+                onClick={foo}
+                icon={state.icon}
+                togglable>
+                    foo
+            </Button>
 
-        <KendoButton togglable>Second button</KendoButton>
-        <KendoButton togglable>Last button</KendoButton>
-        </KendoButtonGroup>
+            <Button togglable>Second button</Button>
+            <Button togglable>Last button</Button>
+        </ButtonGroup>
         </div>
     );
 

@@ -24,7 +24,7 @@ const propTypes = {
     togglable: PropTypes.bool
 };
 
-class KendoButton extends React.Component {
+class Button extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -81,6 +81,6 @@ class KendoButton extends React.Component {
     }
 }
 
-KendoButton.propTypes = propTypes;
+Button.propTypes = propTypes;
 
-export default KendoButton;
+export default Button;

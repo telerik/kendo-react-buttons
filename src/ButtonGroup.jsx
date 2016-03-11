@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import KendoButton from './kendo-button';
+import Button from './Button';
 import classNames from 'classnames';
 
 const propTypes = {
@@ -7,7 +7,7 @@ const propTypes = {
     disabled: PropTypes.bool
 };
 
-class KendoButtonGroup extends React.Component {
+class ButtonGroup extends React.Component {
     constructor() {
         super();
     }
@@ -25,7 +25,7 @@ class KendoButtonGroup extends React.Component {
             'k-group-end': index === this.props.children.length - 1
         });
         let buttonProps = { ...child.props, className: buttonClasses };
-        return(<KendoButton { ...buttonProps }/>);
+        return(<Button { ...buttonProps }/>);
     }
     render() {
         let buttons = this.mapButtons(this.props.children);
@@ -44,6 +44,6 @@ class KendoButtonGroup extends React.Component {
     }
 }
 
-KendoButtonGroup.propTypes = propTypes;
+ButtonGroup.propTypes = propTypes;
 
-export default KendoButtonGroup;
+export default ButtonGroup;
