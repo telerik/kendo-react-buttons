@@ -1,47 +1,100 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-A starter repository for Kendo UI React components, which provides the basic directory structure and dependencies.
+# Kendo UI Buttons Package for React
 
-## Structure
+* [Overview](https://github.com/telerik/kendo-react-buttons#overview)
+* [Glossary](https://github.com/telerik/kendo-react-buttons#glossary)
+  * [Component](https://github.com/telerik/kendo-react-buttons#component)
+  * [Package](https://github.com/telerik/kendo-react-buttons#package)
+  * [Package Version](https://github.com/telerik/kendo-react-buttons#package-version)
+* [Buttons Package Components](https://github.com/telerik/kendo-react-buttons#inputs-package-components)
+* [Basic Usage](https://github.com/telerik/kendo-react-buttons#basic-usage)
+* [Get Started](https://github.com/telerik/kendo-react-buttons#get-started)
+  * [Installation](https://github.com/telerik/kendo-react-buttons#installation)
+  * [Browser Support](https://github.com/telerik/kendo-react-buttons#browser-support)
 
-- The `src` directory contains the component source code. All files should be have the `.jsx` extensions so that the build scripts may pick them.
-- The `src/bundle.jsx` file should import and re-export all public components of the package. It is used for the `build-cdn` task.
-- The `src/index.jsx` is the main entry point for the NPM package (as specified by the `package.json`). The `build-npm-package` transpiles it to `dist/npm/js/index.js`;
-- The `src/kendo-component.jsx` file is the actual sample component implementation.
-- The `src/util.jsx` is an optional example of an additional file - you may remove it if unnecessary.
+## Overview
 
-- The `examples` directory hosts the demos for the component. As a bare minimum, the component should have a `basic usage` and a `CDN` example.  The `CDN` example should work as expected after the `build-cdn` task has been run.
-- The `test` directory contains the component tests. They are transpiled just like the source code itself, and are run with Jasmine in NodeJS.
+This repository holds the source code files and documentation of the Kendo UI components for React included in the Buttons distribution of the suite.
 
-- The `docs` directory contains markdown files that document the specifics of the component.
+## Glossary
 
-## Usage
+Below are explained the basic terms that Kendo UI suite for React applies.
 
-Follow these steps to build a component called *MyComponent*:
+### Component
 
-1. Clone this repository via `git clone git@github.com:telerik/kendo-react-component-base.git kendo-react-mycomponent`
-1. Get into the directory via `cd kendo-react-mycomponent`
-1. Rename the package in `package.json`: `"name": "kendo-react-mycomponent"`
-1. Use the package name in `gulpfile.js`: 'kendo-react-mycomponent'
-1. Rename the file `src/kendo-component.jsx` to `src/kendo-mycomponent.jsx`
-1. In `src/`, `test/` and `examples/`:
-   1. Replace all occurrences of `KendoComponent` with `KendoMyComponent`
-   1. Replace all occurrences of `kendo-component` with `kendo-mycomponent`
-1. Run `npm install`
-1. Check that the new component runs with `gulp start`
-1. Replace the contents of `README.md` with a nice description of the component
+A Component is a Kendo UI control developed to operate in the React ecosystem. For example, the Kendo UI ButtonGroup for React is a component.
 
-To publish the work internally (and alleviate the risk of your machine burning down along with your work):
+### Package
 
-1. Create a new repo in the telerik organization (named kendo-react-mycomponent).
-1. Rename the `origin` remote in the cloned repo to `base`, via `git remote rename origin base`
-1. Add the newly-created repo named as `origin` via `git remote add origin git@github.com:telerik/kendo-react-mycomponent.git`
-1. Push the master branch to the repo, using `git push -u origin master`
+A package is a conventional term used to designate:
 
-## Gulp tasks
+* A complex or core suite component such as the Kendo UI Animation for React.
+* A group of several components which share common functionalities and/or common codebase. For example, the Kendo UI Button and ButtonGroup components for React are part of the Buttons Package.
 
-- `build-npm-package` - builds the scripts and styles in `dist/npm` in CommonJS format;
-- `build-cdn` - builds the scripts and styles in `dist/cdn` in UMD format.
-- `start` - starts the webpack-dev-server (with browsersync in front of it) - suitable for example preview, development and testing.
-- `test` - runs the tests with Jasmine in NodeJS.
-- `watch-test` - runs the tests in watch mode.
+### Package Version
+
+Each package has a package release version of its own&mdash;for example, Buttons v.3.5.
+
+Because of the continuous release cycle, Marketing Releases include packages with different versions. For example, the R2 2016 Marketing Release may feature the Buttons v.3.5 and Inputs v.2.1 releases.
+
+## Buttons Package Components
+
+The Kendo UI Buttons package for React consists of the Button and ButtonGroup components.
+
+//create a roadmap doc to link the below?
+For more information on forthcoming Buttons package features and components, refer to the [Roadmap of the Kendo UI Layout package for React](...).
+
+## Basic Usage
+
+The sections below demonstrate the basic usage of the Kendo UI Buttons components.
+
+### Kendo UI Button for React
+
+The Button allows users to achieve a UI functionality by clicking on it.
+
+The demo below demonstrates the basic usage of the component.
+
+```html-preview
+    //code
+```
+```jsx
+
+```
+
+For more information, refer to the [documentation on the Button](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/overview.md).
+
+### Kendo UI ButtonGroup for React
+
+The ButtonGroup is a group of more than one Kendo UI Buttons for React.
+
+The demo below demonstrates the basic usage of the component.
+
+```html-preview
+    //code
+```
+```jsx
+
+```
+
+For more information, refer to the [documentation on the ButtonGroup](https://github.com/telerik/kendo-react-buttons/blob/master/docs/buttongroup/overview.md).
+
+## Get Started
+
+The sections below demonstrate how to set up and run the Buttons components, and add them to your project.
+
+### Installation
+
+To install the Kendo UI Buttons components for React, run the command below.
+
+//edit corresponding to this package
+    npm install kendo-react-layout;
+
+    //ES6 Modules
+    import TabStrip from 'kendo-react-layout';
+    //or
+    import { TabStrip } from 'kendo-react-layout';
+
+### Browser Support
+
+The Kendo UI Buttons components for React support all browsers that are supported by the React framework&mdash;Internet Explorer 9 and later versions.

@@ -6,7 +6,7 @@ slug: api_buttongroup_kendouiforreact
 position: 2
 ---
 
-# ButtonGroup
+# ButtonGroup Client-Side API
 
 Represents the Kendo UI ButtonGroup component for React.
 

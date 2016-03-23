@@ -138,4 +138,4 @@ The example below demonstrates a Kendo UI Button for React with ... (describe sc
 
 ## Suggested Links
 
-* [Client-Side API Reference for Kendo UI Button for React]({% slug api_button_kendouiforreact %})
+* [Client-Side API Reference for the Kendo UI Button Component]({% slug api_button_kendouiforreact %})

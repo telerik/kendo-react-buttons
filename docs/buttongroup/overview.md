@@ -138,4 +138,4 @@ The example below demonstrates a Kendo UI ButtonGroup for React with ... (descri
 
 ## Suggested Links
 
-* [Client-Side API Reference for Kendo UI Button for React]({% slug api_buttongroup_kendouiforreact %})
+* [Client-Side API Reference for the Kendo UI ButtonGroup Component]({% slug api_buttongroup_kendouiforreact %})

@@ -6,7 +6,7 @@ slug: api_button_kendouiforreact
 position: 2
 ---
 
-# Button
+# Button Client-Side API
 
 Represents the Kendo UI Button component for React.
 
