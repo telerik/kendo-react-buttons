@@ -14,36 +14,6 @@ Represents the Kendo UI ButtonGroup component for React.
 
 #### disabled `Boolean`
 
-Disables the ButtonGroup. By default, the component is enabled, unless a `disabled` option is set.
+Disables all Button within the ButtonGroup. By default, the component is enabled.
 
-## Add Icons
-
-#### icon `String`
-
-Defines a name of an existing icon in the Kendo UI theme sprite. The icon is applied as a background image of a `span` element inside the ButtonGroup.
-
-#### imageUrl `String`
-
-Defines a URL, which is used for an `img` element inside the Button. The URL can be relative or absolute. If relative, it is evaluated with relation to the web page URL.
-
-#### spriteCssClass `String`
-
-Defines a CSS class&mdash;or multiple classes separated by spaces&mdash;which are used for applying a background image to a `span` element inside the ButtonGroup.
-
-## Toggle
-
-#### togglable `Boolean`
-
-Provides visual styling indicating if the ButtonGroup is clicked. By default, `togglable` is set to `true`.
-
-## Handle Events
-
-#### onClick `function`
-
-Attaches an event handler to the ButtonGroup.
-
-## Index Tabs
-
-#### tabIndex `number`
-
-Indicates the order in which buttons are selected through the `Tab` key.
+For the client-side API of the Button, refer to its [configuration options article]({% slug api_button_kendouiforreact %}).

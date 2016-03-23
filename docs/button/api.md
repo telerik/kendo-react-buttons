@@ -34,7 +34,7 @@ Defines a CSS class&mdash;or multiple classes separated by spaces&mdash;which ar
 
 #### togglable `Boolean`
 
-Provides visual styling indicating if the Button is clicked. By default, `togglable` is set to `true`.
+Provides visual styling indicating if the Button is active. By default, `togglable` is set to `false`.
 
 ## Handle Events
 
@@ -42,7 +42,7 @@ Provides visual styling indicating if the Button is clicked. By default, `toggla
 
 Attaches an event handler to the Button.
 
-## Index Tabs
+## Tab Index
 
 #### tabIndex `number`
 
