@@ -23,17 +23,33 @@ The ButtonGroup is a component that is part of the Buttons `npm` package of the 
 By default, the Kendo UI ButtonGroup for React is enabled.
 
 ```html
-//code goes here
+    <div id="app"></div>    
 ```
 ```jsx
+    ReactDOM.render(
+        <ButtonGroup>
+            <Button>Button 1</Button>
+            <Button>Button 2</Button>
+            <Button>Button 3</Button>
+        </ButtonGroup>,
+        document.getElementById('app')
+    );
 ```
 
 When disabled, the ButtonGroup is displayed but does not function.
 
 ```html
-//code goes here
+    <div id="app"></div>    
 ```
 ```jsx
+    ReactDOM.render(
+        <ButtonGroup disabled>
+            <Button>Disabled Button 1</Button>
+            <Button>Disabled Button 2</Button>
+            <Button>Disabled Button 3</Button>
+        </ButtonGroup>,
+        document.getElementById('app')
+    );
 ```
 
 For detailed information on the Kendo UI ButtonGroup configuration for React, refer to the [ButtonGroup client-side API documentation]({% slug api_buttongroup_kendouiforreact %}).
@@ -54,13 +70,20 @@ The ButtonGroup is WAI ARIA-accessible through the `Tab` key. The `aria-disabled
 
 ### Default Setup
 
-The example below demonstrates the default setup of a Kendo UI ButtonGroup for React.
+The example below demonstrates how to configure a togglable Kendo UI ButtonGroup for React.
 
 ```html-preview
-
+    <div id="app"></div>    
 ```
 ```jsx
-
+    ReactDOM.render(
+        <ButtonGroup>
+            <Button togglable spriteCssClass="k-tool-icon k-bold" />
+            <Button togglable spriteCssClass="k-tool-icon k-italic" />
+            <Button togglable spriteCssClass="k-tool-icon k-underline" />
+        </ButtonGroup>,
+        document.getElementById('app')
+    );
 ```
 
 ## Suggested Links

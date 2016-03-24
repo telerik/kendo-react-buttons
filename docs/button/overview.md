@@ -22,60 +22,99 @@ The Button is a component that is part of the Buttons `npm` package of the Kendo
 
 By default, the Kendo UI Button for React is enabled.
 
-```html
-//code goes here
+```html-preview
+    <div id="app"></div>    
 ```
 ```jsx
+    ReactDOM.render(
+        <Button>Button</Button>,
+        document.getElementById('app')
+    );
 ```
 
 When disabled, the Button is displayed but does not operate.
 
-```html
-//code goes here
+```html-preview
+    <div id="app"></div>    
 ```
 ```jsx
+    ReactDOM.render(
+        <Button disabled>Disabled Button</Button>,
+        document.getElementById('app')
+    );
+```
+
+### Primary
+
+```html-preview
+    <div id="app"></div>    
+```
+```jsx
+    ReactDOM.render(
+        <Button primary>Primary Button</Button>,
+        document.getElementById('app')
+    );
 ```
 
 ### Add Icons
 
 The Kendo UI Button for React enhances textual content by providing the option to add icons&mdash;image, sprite, or font ones. Taking web standards into consideration, it is better to use a background image as the icon does not represent structural content, but is simply a decoration.
 
-Background icons are applied via the `icon` or `spriteCssClass` property and are displayed as a background.
+- via `icon`
+
+//icon from Kendo build-in icons http://demos.telerik.com/kendo-ui/styling/icons
+//displayed as a background.
 
 ```html
-//code goes here
+    <div id="app"></div>    
 ```
 ```jsx
-
+    ReactDOM.render(
+        <Button icon="refresh">Refresh</Button>,
+        document.getElementById('app')
+    );
 ```
+
+- via `imageUrl`
 
 Image icons are applied through the `imageUrl` property.
 
 ```html
-//code goes here
+    <div id="app"></div>    
 ```
 ```jsx
-
+    ReactDOM.render(
+        <Button imageUrl="http://demos.telerik.com/kendo-ui/content/shared/icons/sports/snowboarding.png">Snowboarding</Button>
+        document.getElementById('app')
+    );
 ```
+
+- via `spriteCssClass`
 
 FontAwesome or other font icons also can reside in a Kendo UI Button for React. They are implemented by setting the required third-party CSS classes through the `spriteCssClass` property.
 
 ```html
-//code goes here
+    <div id="app"></div>    
 ```
 ```jsx
-
+    ReactDOM.render(
+        <Button spriteCssClass="fa fa-key fa-fw">FontAwesome icon</Button>
+        document.getElementById('app')
+    );
 ```
 
-### Toggle
+### Togglable
 
 The Button supports also visual styling that indicates if it is active. This functionality is set through the `togglable` option. By default, `togglable` is set to `false`.
 
 ```html
-//code goes here
+    <div id="app"></div>    
 ```
 ```jsx
-
+    ReactDOM.render(
+        <Button togglable>Togglable button</Button>
+        document.getElementById('app')
+    );
 ```
 
 ### Handle Events
@@ -83,10 +122,33 @@ The Button supports also visual styling that indicates if it is active. This fun
 Through setting the `onClick` option, an event handler can be attached to the Button.
 
 ```html
-//code goes here
+    <div id="app"></div>    
 ```
 ```jsx
+    class ButtonContainer extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                disabled: false
+            };
+        }
+        onClick = () => {
+            this.setState({ disabled: !this.state.disabled });
+        }
+        render() {
+            return (
+                <div>
+                    <Button onClick={this.onClick}>Button 1</Button>
+                    <Button disabled={this.state.disabled}>Button 2</Button>
+                </div>
+            );
+        }
+    }
 
+    ReactDOM.render(
+        <ButtonContainer />,
+        document.getElementById('app')
+    );
 ```
 
 ### Tab Index
@@ -94,10 +156,17 @@ Through setting the `onClick` option, an event handler can be attached to the Bu
 By setting the `tabIndex` option, you are able to indicate the order in which buttons are selected through the `Tab` key.
 
 ```html
-//code goes here
+    <div id="app"></div>    
 ```
 ```jsx
-
+    ReactDOM.render(
+        <div>
+            <Button tabIndex={2}>Button 2</Button>
+            <Button tabIndex={1}>Button 1</Button>
+            <Button tabIndex={3}>Button 3</Button>
+        </div>,
+        document.getElementById('app')
+    );
 ```
 
 For detailed information on the Kendo UI Button configuration for React, refer to the [Button client-side API documentation]({% slug api_button_kendouiforreact %}).
@@ -123,10 +192,50 @@ The Button is WAI ARIA-accessible through the `Tab` key. The `aria-disabled` opt
 The example below demonstrates the default setup of a Kendo UI Button for React.
 
 ```html-preview
-
+    <div id="app"></div>    
 ```
 ```jsx
+    class ButtonContainer extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                disabled: false
+            };
+        }
+        onClick = () => {
+            this.setState({ disabled: !this.state.disabled });
+        }
+        render() {
+            return (
+                <div>
+                    <Button onClick={this.onClick}>Button 1</Button>
+                    <Button disabled={this.state.disabled}>Button 2</Button>
+                </div>
+            );
+        }
+    }
 
+    ReactDOM.render(
+        <div>
+            <p>Button</p>
+            <Button>Button</Button>
+            <p>Disabled Button</p>
+            <Button disabled>Button</Button>
+            <p>Primary Button</p>
+            <Button primary>Primary Button</Button>
+            <p>Button with icon</p>
+            <Button icon="refresh">Refresh</Button>
+            <p>Button with icon (imageUrl)</p>
+            <Button imageUrl="http://demos.telerik.com/kendo-ui/content/shared/icons/sports/snowboarding.png">Snowboarding</Button>
+            <p>Button with icon (spriteCssClass) [FontAwesome icon]</p>
+            <Button spriteCssClass="fa fa-key fa-fw">FontAwesome icon</Button>
+            <p>Toggleable Button</p>
+            <Button togglable>Togglable button</Button>
+            <p>onClick event handler</p>
+            <ButtonContainer />
+        </div>,
+        document.getElementById('app')
+    );
 ```
 
 ## Suggested Links
