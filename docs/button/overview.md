@@ -44,7 +44,9 @@ When disabled, the Button is displayed but does not operate.
     );
 ```
 
-### Primary
+### Set Primary Buttons
+
+Depending on your project, the Button enables you to add visual weight to it and make it primary. 
 
 ```html-preview
     <div id="app"></div>    
@@ -60,10 +62,9 @@ When disabled, the Button is displayed but does not operate.
 
 The Kendo UI Button for React enhances textual content by providing the option to add icons&mdash;image, sprite, or font ones. Taking web standards into consideration, it is better to use a background image as the icon does not represent structural content, but is simply a decoration.
 
-- via `icon`
+**Use `icon`**
 
-//icon from Kendo build-in icons http://demos.telerik.com/kendo-ui/styling/icons
-//displayed as a background.
+The [Kendo UI built-in icons](http://demos.telerik.com/kendo-ui/styling/icons) are applied through the `icon` property and dispalyed as the background of the Button component. 
 
 ```html
     <div id="app"></div>    
@@ -75,7 +76,7 @@ The Kendo UI Button for React enhances textual content by providing the option t
     );
 ```
 
-- via `imageUrl`
+**Use `imageUrl`**
 
 Image icons are applied through the `imageUrl` property.
 
@@ -89,7 +90,7 @@ Image icons are applied through the `imageUrl` property.
     );
 ```
 
-- via `spriteCssClass`
+**Use `spriteCssClass`**
 
 FontAwesome or other font icons also can reside in a Kendo UI Button for React. They are implemented by setting the required third-party CSS classes through the `spriteCssClass` property.
 
@@ -102,6 +103,8 @@ FontAwesome or other font icons also can reside in a Kendo UI Button for React. 
         document.getElementById('app')
     );
 ```
+
+To see the full list of Kendo UI web font icons, refer to the [related article](http://docs.telerik.com/kendo-ui/styles-and-layout/icons-web).  
 
 ### Togglable
 
@@ -153,7 +156,7 @@ Through setting the `onClick` option, an event handler can be attached to the Bu
 
 ### Tab Index
 
-By setting the `tabIndex` option, you are able to indicate the order in which buttons are selected through the `Tab` key.
+By setting the `tabIndex` option, you indicate the order in which buttons are selected through the `Tab` key.
 
 ```html
     <div id="app"></div>    
