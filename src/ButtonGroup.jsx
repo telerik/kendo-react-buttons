@@ -39,7 +39,7 @@ class ButtonGroup extends React.Component {
             'aria-disabled': this.props.disabled
         };
         return (
-            <div {...groupProps}>{buttons}</div>
+            <div {...groupProps} className={groupClasses}>{buttons}</div>
         );
     }
 }
