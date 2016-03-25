@@ -52,7 +52,7 @@ When disabled, the ButtonGroup is displayed but does not function.
     );
 ```
 
-For detailed information on the Kendo UI ButtonGroup configuration for React, refer to the [ButtonGroup client-side API documentation]({% slug api_buttongroup_kendouiforreact %}).
+For detailed information on the Kendo UI ButtonGroup configuration for React, refer to the [ButtonGroup client-side API documentation](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md).
 
 ## Keyboard Navigation
 
