@@ -16,6 +16,59 @@ The Button is a component that is part of the Buttons `npm` package of the Kendo
 
 //a template screen to be added - Vasko
 
+## Demos
+
+### Default Setup
+
+The example below demonstrates the default setup of a Kendo UI Button for React.
+
+```html-preview
+    <div id="app"></div>    
+```
+```jsx
+    class ButtonContainer extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                disabled: false
+            };
+        }
+        onClick = () => {
+            this.setState({ disabled: !this.state.disabled });
+        }
+        render() {
+            return (
+                <div>
+                    <Button onClick={this.onClick}>Button 1</Button>
+                    <Button disabled={this.state.disabled}>Button 2</Button>
+                </div>
+            );
+        }
+    }
+
+    ReactDOM.render(
+        <div>
+            <p>Button</p>
+            <Button>Button</Button>
+            <p>Disabled Button</p>
+            <Button disabled>Button</Button>
+            <p>Primary Button</p>
+            <Button primary>Primary Button</Button>
+            <p>Button with icon</p>
+            <Button icon="refresh">Refresh</Button>
+            <p>Button with icon (imageUrl)</p>
+            <Button imageUrl="http://demos.telerik.com/kendo-ui/content/shared/icons/sports/snowboarding.png">Snowboarding</Button>
+            <p>Button with icon (spriteCssClass) [FontAwesome icon]</p>
+            <Button spriteCssClass="fa fa-key fa-fw">FontAwesome icon</Button>
+            <p>Toggleable Button</p>
+            <Button togglable>Togglable button</Button>
+            <p>onClick event handler</p>
+            <ButtonContainer />
+        </div>,
+        document.getElementById('app')
+    );
+```
+
 ## Configuration
 
 ### Enable and Disable
@@ -106,7 +159,7 @@ FontAwesome or other font icons also can reside in a Kendo UI Button for React. 
 
 To see the full list of Kendo UI web font icons, refer to the [related article](http://docs.telerik.com/kendo-ui/styles-and-layout/icons-web).  
 
-### Togglable
+### Toggle
 
 The Button supports also visual styling that indicates if it is active. This functionality is set through the `togglable` option. By default, `togglable` is set to `false`.
 
@@ -154,7 +207,7 @@ Through setting the `onClick` option, an event handler can be attached to the Bu
     );
 ```
 
-### Tab Index
+### Set Tab Indexes
 
 By setting the `tabIndex` option, you indicate the order in which buttons are selected through the `Tab` key.
 
@@ -187,59 +240,6 @@ Below is the list with the keyboard shortcuts the Button supports.
 ## Accessibility
 
 The Button is WAI ARIA-accessible through the `Tab` key. The `aria-disabled` option defines the accessibility setting when an attribute is disabled.
-
-## Demos
-
-### Default Setup
-
-The example below demonstrates the default setup of a Kendo UI Button for React.
-
-```html-preview
-    <div id="app"></div>    
-```
-```jsx
-    class ButtonContainer extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                disabled: false
-            };
-        }
-        onClick = () => {
-            this.setState({ disabled: !this.state.disabled });
-        }
-        render() {
-            return (
-                <div>
-                    <Button onClick={this.onClick}>Button 1</Button>
-                    <Button disabled={this.state.disabled}>Button 2</Button>
-                </div>
-            );
-        }
-    }
-
-    ReactDOM.render(
-        <div>
-            <p>Button</p>
-            <Button>Button</Button>
-            <p>Disabled Button</p>
-            <Button disabled>Button</Button>
-            <p>Primary Button</p>
-            <Button primary>Primary Button</Button>
-            <p>Button with icon</p>
-            <Button icon="refresh">Refresh</Button>
-            <p>Button with icon (imageUrl)</p>
-            <Button imageUrl="http://demos.telerik.com/kendo-ui/content/shared/icons/sports/snowboarding.png">Snowboarding</Button>
-            <p>Button with icon (spriteCssClass) [FontAwesome icon]</p>
-            <Button spriteCssClass="fa fa-key fa-fw">FontAwesome icon</Button>
-            <p>Toggleable Button</p>
-            <Button togglable>Togglable button</Button>
-            <p>onClick event handler</p>
-            <ButtonContainer />
-        </div>,
-        document.getElementById('app')
-    );
-```
 
 ## Suggested Links
 
