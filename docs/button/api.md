@@ -42,7 +42,7 @@ Provides visual styling indicating if the Button is active. By default, `togglab
 
 Attaches an event handler to the Button.
 
-## Tab Index
+## Set Tab Indexes
 
 #### tabIndex `number`
 
