@@ -8,11 +8,11 @@ position: 1
 
 # ButtonGroup Overview
 
-The Kendo UI ButtonGroup for React is a container for two or more Kendo UI Button components. Each Button can be separately configured depending on your project requirements and according to the [Button client-side API]({% slug api_button_kendouiforreact %}).  
+The Kendo UI ButtonGroup for React is a container for two or more Kendo UI Button components. Each Button can be separately configured depending on your project requirements and according to the [Button client-side API](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md).  
 
 The ButtonGroup is a component that is part of the Buttons `npm` package of the Kendo UI suite for React.
 
-**Figure 1. A ButtonGroup template displaying text and a sprite icon as a background image**
+**Figure 1: A ButtonGroup template displaying text and a sprite icon as a background image**
 
 //a template screen to be added - Vasko
 
@@ -88,4 +88,4 @@ The example below demonstrates how to configure a togglable Kendo UI ButtonGroup
 
 ## Suggested Links
 
-* [Client-Side API Reference for the Kendo UI ButtonGroup Component]({% slug api_buttongroup_kendouiforreact %})
+* [Client-Side API Reference for the Kendo UI ButtonGroup Component](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md)
