@@ -12,7 +12,7 @@ The Kendo UI Button is a React component that allows the user to achieve a UI fu
 
 The Button is a component that is part of the Buttons `npm` package of the Kendo UI suite for React.
 
-**Figure 1. A Button template displaying text and a sprite icon as a background image**
+**Figure 1: A Button template displaying text and a sprite icon as a background image**
 
 //a template screen to be added - Vasko
 
@@ -243,4 +243,4 @@ The Button is WAI ARIA-accessible through the `Tab` key. The `aria-disabled` opt
 
 ## Suggested Links
 
-* [Client-Side API Reference for the Kendo UI Button Component]({% slug api_button_kendouiforreact %})
+* [Client-Side API Reference for the Kendo UI Button Component](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md)
