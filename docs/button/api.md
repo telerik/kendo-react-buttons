@@ -16,6 +16,12 @@ Represents the Kendo UI Button component for React.
 
 Disables the Button. By default, the component is enabled, unless a `disabled` option is set.
 
+## Set Primary Buttons
+
+#### primary `Boolean`
+
+Adds visual weight to the Button and makes it primary.
+
 ## Add Icons
 
 #### icon `String`
