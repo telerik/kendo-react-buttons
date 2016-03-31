@@ -31,7 +31,7 @@ The Button allows users to achieve a UI functionality by clicking on it.
 
 ```
 
-For more examples and available configuration options, refer to the [Button documentation section](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/overview.md).
+For more examples and available configuration options, refer to the [Button documentation section](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/index.md).
 
 ### Kendo UI ButtonGroup for React
 
@@ -44,7 +44,7 @@ The ButtonGroup is a group of more than one Kendo UI Buttons for React.
 
 ```
 
-For more examples and available configuration options, refer to the [ButtonGroup documentation section](https://github.com/telerik/kendo-react-buttons/blob/master/docs/buttongroup/overview.md).
+For more examples and available configuration options, refer to the [ButtonGroup documentation section](https://github.com/telerik/kendo-react-buttons/blob/master/docs/buttongroup/index.md).
 
 ## Installation
 
