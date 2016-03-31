@@ -18,7 +18,7 @@ Apart from the consistent Kendo UI styling they support, both the Button and But
 
 Articles on Kendo UI Buttons components for React:
 
-* [Get Started with the Button](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/overview.md)
+* [Get Started with the Button](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/index.md)
 * [Client-Side Button API](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md)
-* [Get Started with the ButtonGroup](https://github.com/telerik/kendo-react-buttons/blob/master/docs/buttongroup/overview.md)
+* [Get Started with the ButtonGroup](https://github.com/telerik/kendo-react-buttons/blob/master/docs/buttongroup/index.md)
 * [Client-Side ButtonGroup API](https://github.com/telerik/kendo-react-buttons/blob/master/docs/buttongroup/api.md)
