@@ -16,6 +16,26 @@ The ButtonGroup is a component that is part of the Buttons `npm` package of the 
 
 //a template screen to be added - Vasko
 
+## Demos
+
+### Default Setup
+
+The example below demonstrates how to configure a togglable Kendo UI ButtonGroup for React.
+
+```html-preview
+    <div id="app"></div>    
+```
+```jsx
+    ReactDOM.render(
+        <ButtonGroup>
+            <Button togglable spriteCssClass="k-tool-icon k-bold" />
+            <Button togglable spriteCssClass="k-tool-icon k-italic" />
+            <Button togglable spriteCssClass="k-tool-icon k-underline" />
+        </ButtonGroup>,
+        document.getElementById('app')
+    );
+```
+
 ## Configuration
 
 ### Enable and Disable
@@ -65,26 +85,6 @@ Below is the list with the keyboard shortcuts the ButtonGroup supports.
 ## Accessibility
 
 The ButtonGroup is WAI ARIA-accessible through the `Tab` key. The `aria-disabled` option defines the accessibility setting when an attribute is disabled.
-
-## Demos
-
-### Default Setup
-
-The example below demonstrates how to configure a togglable Kendo UI ButtonGroup for React.
-
-```html-preview
-    <div id="app"></div>    
-```
-```jsx
-    ReactDOM.render(
-        <ButtonGroup>
-            <Button togglable spriteCssClass="k-tool-icon k-bold" />
-            <Button togglable spriteCssClass="k-tool-icon k-italic" />
-            <Button togglable spriteCssClass="k-tool-icon k-underline" />
-        </ButtonGroup>,
-        document.getElementById('app')
-    );
-```
 
 ## Suggested Links
 

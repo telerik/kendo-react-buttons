@@ -99,7 +99,7 @@ When disabled, the Button is displayed but does not operate.
 
 ### Set Primary Buttons
 
-Depending on your project, the Button enables you to add visual weight to it and make it primary. 
+Depending on your project, the Button enables you to add visual weight to it and make it primary.
 
 ```html-preview
     <div id="app"></div>    
@@ -117,7 +117,7 @@ The Kendo UI Button for React enhances textual content by providing the option t
 
 **Use `icon`**
 
-The [Kendo UI built-in icons](http://demos.telerik.com/kendo-ui/styling/icons) are applied through the `icon` property and dispalyed as the background of the Button component. 
+The [Kendo UI built-in icons](http://demos.telerik.com/kendo-ui/styling/icons) are applied through the [`icon`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#icon-string) property and displayed as the background of the Button component.
 
 ```html
     <div id="app"></div>    
@@ -131,7 +131,7 @@ The [Kendo UI built-in icons](http://demos.telerik.com/kendo-ui/styling/icons) a
 
 **Use `imageUrl`**
 
-Image icons are applied through the `imageUrl` property.
+Image icons are applied through the [`imageUrl`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#imageurl-string) property.
 
 ```html
     <div id="app"></div>    
@@ -145,7 +145,7 @@ Image icons are applied through the `imageUrl` property.
 
 **Use `spriteCssClass`**
 
-FontAwesome or other font icons also can reside in a Kendo UI Button for React. They are implemented by setting the required third-party CSS classes through the `spriteCssClass` property.
+FontAwesome or other font icons also can reside in a Kendo UI Button for React. They are implemented by setting the required third-party CSS classes through the [`spriteCssClass`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#spritecssclass-string) property.
 
 ```html
     <div id="app"></div>    
@@ -161,7 +161,7 @@ To see the full list of Kendo UI web font icons, refer to the [related article](
 
 ### Toggle
 
-The Button supports also visual styling that indicates if it is active. This functionality is set through the `togglable` option. By default, `togglable` is set to `false`.
+The Button supports also visual styling that indicates if it is active. This functionality is set through the [`togglable`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#togglable-boolean) option. By default, `togglable` is set to `false`.
 
 ```html
     <div id="app"></div>    
@@ -175,7 +175,7 @@ The Button supports also visual styling that indicates if it is active. This fun
 
 ### Handle Events
 
-Through setting the `onClick` option, an event handler can be attached to the Button.
+Through setting the [`onClick`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#onclick-function) option, an event handler can be attached to the Button.
 
 ```html
     <div id="app"></div>    
@@ -209,7 +209,7 @@ Through setting the `onClick` option, an event handler can be attached to the Bu
 
 ### Set Tab Indexes
 
-By setting the `tabIndex` option, you indicate the order in which buttons are selected through the `Tab` key.
+By setting the [`tabIndex`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#tabindex-number) option, you indicate the order in which buttons are selected through the `Tab` key.
 
 ```html
     <div id="app"></div>    
@@ -233,8 +233,7 @@ Below is the list with the keyboard shortcuts the Button supports.
 
 | SHORTCUT                            | DESCRIPTION         |
 |:---                                 |:---                 |
-| `Enter`                             | Click the Button.   |
-| `Space`                             | Click the Button.   |
+| `Enter` or `Space`                  | Click the Button.   |
 | `Tab`                               | Focus the Button.   |
 
 ## Accessibility
