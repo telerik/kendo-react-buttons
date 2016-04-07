@@ -3,8 +3,8 @@ import classNames from 'classnames';
 import styles from '@telerik/kendo-theme-default/styles/button/main';
 
 function ButtonIcon({ imageUrl, icon, spriteCssClass }) {
-    const image = imageUrl ? (<img className="k-image" src={imageUrl} />) : null;
-    const iconClasses = icon ? `k-icon k-sprite k-i-${icon}` : spriteCssClass;
+    const image = imageUrl ? (<img className={styles.image} src={imageUrl} />) : null;
+    const iconClasses = icon ? classNames(styles.icon, styles['i-' + icon]) : spriteCssClass;
     return <span className={iconClasses}>{image}</span>;
 }
 
@@ -51,14 +51,14 @@ class Button extends React.Component {
         }
     }
     render() {
-        let buttonClasses = classNames({
+        const buttonClasses = classNames({
             [styles.button]: true,
-            'k-button-icon': this.props.children === undefined,
-            'k-state-disabled': this.props.disabled,
-            'k-primary': this.props.primary,
-            'k-state-active': this.state.active
+            [styles['button-icon']]: this.props.children === undefined,
+            [styles['state-disabled']]: this.props.disabled,
+            [styles['primary']]: this.props.primary,
+            [styles['state-active']]: this.state.active
         }, this.props.className);
-        let buttonProps = {
+        const buttonProps = {
             role: 'button',
             tabIndex: this.props.tabIndex || 0,
             className: buttonClasses,
@@ -67,7 +67,7 @@ class Button extends React.Component {
             onKeyPress: this.handleKeyPress,
             'aria-disabled': this.props.disabled
         };
-        let iconProps = {
+        const iconProps = {
             icon: this.props.icon,
             imageUrl: this.props.imageUrl,
             spriteCssClass: this.props.spriteCssClass
