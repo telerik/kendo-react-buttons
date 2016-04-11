@@ -39,8 +39,8 @@ The example below demonstrates the default setup of a Kendo UI Button for React.
         render() {
             return (
                 <div>
-                    <Button onClick={this.onClick}>Button 1</Button>
-                    <Button disabled={this.state.disabled}>Button 2</Button>
+                    <KendoReactButtons.Button onClick={this.onClick}>Button 1</KendoReactButtons.Button>
+                    <KendoReactButtons.Button disabled={this.state.disabled}>Button 2</KendoReactButtons.Button>
                 </div>
             );
         }
@@ -49,19 +49,19 @@ The example below demonstrates the default setup of a Kendo UI Button for React.
     ReactDOM.render(
         <div>
             <p>Button</p>
-            <Button>Button</Button>
+            <KendoReactButtons.Button>Button</KendoReactButtons.Button>
             <p>Disabled Button</p>
-            <Button disabled>Button</Button>
+            <KendoReactButtons.Button disabled>Button</KendoReactButtons.Button>
             <p>Primary Button</p>
-            <Button primary>Primary Button</Button>
+            <KendoReactButtons.Button primary>Primary Button</KendoReactButtons.Button>
             <p>Button with icon</p>
-            <Button icon="refresh">Refresh</Button>
+            <KendoReactButtons.Button icon="refresh">Refresh</KendoReactButtons.Button>
             <p>Button with icon (imageUrl)</p>
-            <Button imageUrl="http://demos.telerik.com/kendo-ui/content/shared/icons/sports/snowboarding.png">Snowboarding</Button>
+            <KendoReactButtons.Button imageUrl="http://demos.telerik.com/kendo-ui/content/shared/icons/sports/snowboarding.png">Snowboarding</KendoReactButtons.Button>
             <p>Button with icon (spriteCssClass) [FontAwesome icon]</p>
-            <Button spriteCssClass="fa fa-key fa-fw">FontAwesome icon</Button>
+            <KendoReactButtons.Button spriteCssClass="fa fa-key fa-fw">FontAwesome icon</KendoReactButtons.Button>
             <p>Toggleable Button</p>
-            <Button togglable>Togglable button</Button>
+            <KendoReactButtons.Button togglable>Togglable button</KendoReactButtons.Button>
             <p>onClick event handler</p>
             <ButtonContainer />
         </div>,
@@ -80,7 +80,7 @@ By default, the Kendo UI Button for React is enabled.
 ```
 ```jsx
     ReactDOM.render(
-        <Button>Button</Button>,
+        <KendoReactButtons.Button>Button</KendoReactButtons.Button>,
         document.getElementById('app')
     );
 ```
@@ -92,7 +92,7 @@ When disabled, the Button is displayed but does not operate.
 ```
 ```jsx
     ReactDOM.render(
-        <Button disabled>Disabled Button</Button>,
+        <KendoReactButtons.Button disabled>Disabled Button</KendoReactButtons.Button>,
         document.getElementById('app')
     );
 ```
@@ -106,7 +106,7 @@ Depending on your project, the Button enables you to add visual weight to it and
 ```
 ```jsx
     ReactDOM.render(
-        <Button primary>Primary Button</Button>,
+        <KendoReactButtons.Button primary>Primary Button</KendoReactButtons.Button>,
         document.getElementById('app')
     );
 ```
@@ -124,7 +124,7 @@ The [Kendo UI built-in icons](http://demos.telerik.com/kendo-ui/styling/icons) a
 ```
 ```jsx
     ReactDOM.render(
-        <Button icon="refresh">Refresh</Button>,
+        <KendoReactButtons.Button icon="refresh">Refresh</KendoReactButtons.Button>,
         document.getElementById('app')
     );
 ```
@@ -138,7 +138,7 @@ Image icons are applied through the [`imageUrl`](https://github.com/telerik/kend
 ```
 ```jsx
     ReactDOM.render(
-        <Button imageUrl="http://demos.telerik.com/kendo-ui/content/shared/icons/sports/snowboarding.png">Snowboarding</Button>
+        <KendoReactButtons.Button imageUrl="http://demos.telerik.com/kendo-ui/content/shared/icons/sports/snowboarding.png">Snowboarding</KendoReactButtons.Button>,
         document.getElementById('app')
     );
 ```
@@ -152,7 +152,7 @@ FontAwesome or other font icons also can reside in a Kendo UI Button for React. 
 ```
 ```jsx
     ReactDOM.render(
-        <Button spriteCssClass="fa fa-key fa-fw">FontAwesome icon</Button>
+        <KendoReactButtons.Button spriteCssClass="fa fa-key fa-fw">FontAwesome icon</KendoReactButtons.Button>,
         document.getElementById('app')
     );
 ```
@@ -168,7 +168,7 @@ The Button supports also visual styling that indicates if it is active. This fun
 ```
 ```jsx
     ReactDOM.render(
-        <Button togglable>Togglable button</Button>
+        <KendoReactButtons.Button togglable>Togglable button</KendoReactButtons.Button>,
         document.getElementById('app')
     );
 ```
@@ -194,8 +194,8 @@ Through setting the [`onClick`](https://github.com/telerik/kendo-react-buttons/b
         render() {
             return (
                 <div>
-                    <Button onClick={this.onClick}>Button 1</Button>
-                    <Button disabled={this.state.disabled}>Button 2</Button>
+                    <KendoReactButtons.Button onClick={this.onClick}>Button 1</KendoReactButtons.Button>
+                    <KendoReactButtons.Button disabled={this.state.disabled}>Button 2</KendoReactButtons.Button>
                 </div>
             );
         }
@@ -217,9 +217,9 @@ By setting the [`tabIndex`](https://github.com/telerik/kendo-react-buttons/blob/
 ```jsx
     ReactDOM.render(
         <div>
-            <Button tabIndex={2}>Button 2</Button>
-            <Button tabIndex={1}>Button 1</Button>
-            <Button tabIndex={3}>Button 3</Button>
+            <KendoReactButtons.Button tabIndex={2}>Button 2</KendoReactButtons.Button>
+            <KendoReactButtons.Button tabIndex={1}>Button 1</KendoReactButtons.Button>
+            <KendoReactButtons.Button tabIndex={3}>Button 3</KendoReactButtons.Button>
         </div>,
         document.getElementById('app')
     );

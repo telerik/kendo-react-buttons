@@ -27,11 +27,11 @@ The example below demonstrates how to configure a togglable Kendo UI ButtonGroup
 ```
 ```jsx
     ReactDOM.render(
-        <ButtonGroup>
-            <Button togglable spriteCssClass="k-tool-icon k-bold" />
-            <Button togglable spriteCssClass="k-tool-icon k-italic" />
-            <Button togglable spriteCssClass="k-tool-icon k-underline" />
-        </ButtonGroup>,
+        <KendoReactButtons.ButtonGroup>
+            <KendoReactButtons.Button togglable spriteCssClass="k-tool-icon k-bold" />
+            <KendoReactButtons.Button togglable spriteCssClass="k-tool-icon k-italic" />
+            <KendoReactButtons.Button togglable spriteCssClass="k-tool-icon k-underline" />
+        </KendoReactButtons.ButtonGroup>,
         document.getElementById('app')
     );
 ```
@@ -47,11 +47,11 @@ By default, the Kendo UI ButtonGroup for React is enabled.
 ```
 ```jsx
     ReactDOM.render(
-        <ButtonGroup>
-            <Button>Button 1</Button>
-            <Button>Button 2</Button>
-            <Button>Button 3</Button>
-        </ButtonGroup>,
+        <KendoReactButtons.ButtonGroup>
+            <KendoReactButtons.Button>Button 1</KendoReactButtons.Button>
+            <KendoReactButtons.Button>Button 2</KendoReactButtons.Button>
+            <KendoReactButtons.Button>Button 3</KendoReactButtons.Button>
+        </KendoReactButtons.ButtonGroup>,
         document.getElementById('app')
     );
 ```
@@ -63,11 +63,11 @@ When disabled, the ButtonGroup is displayed but does not function.
 ```
 ```jsx
     ReactDOM.render(
-        <ButtonGroup disabled>
-            <Button>Disabled Button 1</Button>
-            <Button>Disabled Button 2</Button>
-            <Button>Disabled Button 3</Button>
-        </ButtonGroup>,
+        <KendoReactButtons.ButtonGroup disabled>
+            <KendoReactButtons.Button>Disabled Button 1</KendoReactButtons.Button>
+            <KendoReactButtons.Button>Disabled Button 2</KendoReactButtons.Button>
+            <KendoReactButtons.Button>Disabled Button 3</KendoReactButtons.Button>
+        </KendoReactButtons.ButtonGroup>,
         document.getElementById('app')
     );
 ```
