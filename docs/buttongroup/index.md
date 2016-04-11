@@ -8,11 +8,11 @@ position: 1
 
 # ButtonGroup Overview
 
-The Kendo UI ButtonGroup for React is a container for two or more Kendo UI Button components. Each Button can be separately configured depending on your project requirements and according to the [Button client-side API](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md).  
+The Kendo UI ButtonGroup for React is a container for two or more Kendo UI Button components. Each Button can be separately configured depending on your project requirements and according to the [Button client-side API](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md).
 
 The ButtonGroup is a component that is part of the Buttons `npm` package of the Kendo UI suite for React.
 
-**Figure 1: A ButtonGroup template displaying text and a sprite icon as a background image**
+**Figure 1: A ButtonGroup template displaying text and an icon as a background image**
 
 ![Template of the Kendo UI ButtonGroup for React](images/buttongroup.png)
 
@@ -28,14 +28,14 @@ The ButtonGroup is a component that is part of the Buttons `npm` package of the 
 The example below demonstrates how to configure a togglable Kendo UI ButtonGroup for React.
 
 ```html-preview
-    <div id="app"></div>    
+    <div id="app"></div>
 ```
 ```jsx
     ReactDOM.render(
         <KendoReactButtons.ButtonGroup>
-            <KendoReactButtons.Button togglable spriteCssClass="k-tool-icon k-bold" />
-            <KendoReactButtons.Button togglable spriteCssClass="k-tool-icon k-italic" />
-            <KendoReactButtons.Button togglable spriteCssClass="k-tool-icon k-underline" />
+            <KendoReactButtons.Button togglable icon="bold" />
+            <KendoReactButtons.Button togglable icon="italic" />
+            <KendoReactButtons.Button togglable icon="underline" />
         </KendoReactButtons.ButtonGroup>,
         document.getElementById('app')
     );
@@ -48,7 +48,7 @@ The example below demonstrates how to configure a togglable Kendo UI ButtonGroup
 By default, the Kendo UI ButtonGroup for React is enabled.
 
 ```html
-    <div id="app"></div>    
+    <div id="app"></div>
 ```
 ```jsx
     ReactDOM.render(
@@ -64,7 +64,7 @@ By default, the Kendo UI ButtonGroup for React is enabled.
 When disabled, the ButtonGroup is displayed but does not function.
 
 ```html
-    <div id="app"></div>    
+    <div id="app"></div>
 ```
 ```jsx
     ReactDOM.render(

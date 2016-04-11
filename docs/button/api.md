@@ -26,15 +26,15 @@ Adds visual weight to the Button and makes it primary.
 
 #### icon `String`
 
-Defines a name of an existing icon in the Kendo UI theme sprite. The icon is applied as a background image of a `span` element inside the Button.
+Defines a name of an existing icon in the Kendo UI theme. The icon is rendered via a `span.k-icon` element inside the Button.
+
+#### iconClass `String`
+
+Defines a CSS class&mdash;or multiple classes separated by spaces&mdash;which are applied to a `span` element inside the Button. Allows use of custom icons.
 
 #### imageUrl `String`
 
 Defines a URL, which is used for an `img` element inside the Button. The URL can be relative or absolute. If relative, it is evaluated with relation to the web page URL.
-
-#### spriteCssClass `String`
-
-Defines a CSS class&mdash;or multiple classes separated by spaces&mdash;which are used for applying a background image to a `span` element inside the Button.
 
 ## Toggle
 
