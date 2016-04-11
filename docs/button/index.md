@@ -29,6 +29,9 @@ The Button is a component that is part of the Buttons `npm` package of the Kendo
 The example below demonstrates the default setup of a Kendo UI Button for React.
 
 ```html-preview
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
     <div id="app"></div>
 ```
 ```jsx
@@ -154,6 +157,9 @@ Image icons are applied through the [`imageUrl`](https://github.com/telerik/kend
 FontAwesome or other font icons also can reside in a Kendo UI Button for React. They are implemented by setting the required third-party CSS classes through the [`iconClass`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#iconclass-string) property.
 
 ```html
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
     <div id="app"></div>
 ```
 ```jsx
