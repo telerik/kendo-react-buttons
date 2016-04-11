@@ -2,10 +2,17 @@ import React, { PropTypes } from 'react';
 import classNames from 'classnames';
 import styles from '@telerik/kendo-theme-default/styles/button/main';
 
-function ButtonIcon({ imageUrl, icon, spriteCssClass }) {
-    const image = imageUrl ? (<img className={styles.image} src={imageUrl} />) : null;
-    const iconClasses = icon ? classNames(styles.icon, styles['i-' + icon]) : spriteCssClass;
-    return <span className={iconClasses}>{image}</span>;
+function iconElement({ imageUrl, icon, iconClass }) {
+    if (imageUrl) {
+        return (<img className={styles.image} src={imageUrl} />);
+    } else if (icon) {
+        const iconClasses = classNames(styles.icon, styles['i-' + icon]);
+        return (<span className={iconClasses}></span>);
+    } else if (iconClass) {
+        return (<span className={iconClass}></span>);
+    }
+
+    return null;
 }
 
 const propTypes = {
@@ -20,14 +27,14 @@ const propTypes = {
     onClick: PropTypes.func,
     onMouseDown: PropTypes.func,
     primary: PropTypes.bool,
-    spriteCssClass: PropTypes.string,
+    iconClass: PropTypes.string,
     tabIndex: PropTypes.number,
     togglable: PropTypes.bool
 };
 
 class Button extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             active: false
         };
@@ -68,6 +75,7 @@ class Button extends React.Component {
             [styles['primary']]: this.props.primary,
             [styles['state-active']]: this.state.active
         }, this.props.className);
+
         const buttonProps = {
             role: 'button',
             tabIndex: this.props.tabIndex || 0,
@@ -78,14 +86,16 @@ class Button extends React.Component {
             onKeyPress: this.handleKeyPress,
             'aria-disabled': this.props.disabled
         };
-        const iconProps = {
+
+        const icon = iconElement({
             icon: this.props.icon,
             imageUrl: this.props.imageUrl,
-            spriteCssClass: this.props.spriteCssClass
-        };
+            iconClass: this.props.iconClass
+        });
+
         return (
             <a {...buttonProps}>
-                <ButtonIcon {...iconProps} />
+                {icon}
                 {this.props.children}
             </a>
         );

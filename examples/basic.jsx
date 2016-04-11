@@ -8,9 +8,7 @@ import styles from '@telerik/kendo-theme-default/styles/icons/main'
 class ButtonContainer extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            disabled: false
-        };
+        this.state = { disabled: false };
     }
     onClick() {
         this.setState({ disabled: !this.state.disabled });
@@ -18,27 +16,10 @@ class ButtonContainer extends React.Component {
     render() {
         return (
             <div>
-                <Button onClick={this.onClick}>Button 1</Button>
-                <Button disabled={this.state.disabled}>Button 2</Button>
+                <Button onClick={this.onClick}>Disable next button</Button>
+                {" "}
+                <Button disabled={this.state.disabled}>Button</Button>
             </div>
-        );
-    }
-}
-
-class ButtonGroupContainer extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            active: 0
-        };
-    }
-    render() {
-        return (
-            <ButtonGroup>
-                <Button togglable icon="bold" />
-                <Button togglable icon="italic" />
-                <Button togglable icon="underline" />
-            </ButtonGroup>
         );
     }
 }
@@ -57,11 +38,11 @@ ReactDOM.render(
         <p>Button with icon</p>
         <Button icon="refresh">Refresh</Button>
 
-        <p>Button with icon (imageUrl)</p>
+        <p>Button with icon (image via imageUrl)</p>
         <Button imageUrl="http://demos.telerik.com/kendo-ui/content/shared/icons/sports/snowboarding.png">Snowboarding</Button>
 
-        <p>Button with icon (spriteCssClass) [FontAwesome icon]</p>
-        <Button spriteCssClass="fa fa-key fa-fw">FontAwesome icon</Button>
+        <p>Button with icon (custom icon font - FontAwesome) icon</p>
+        <Button iconClass="fa fa-key fa-fw">FontAwesome icon</Button>
 
         <p>Toggleable Button</p>
         <Button togglable>Togglable button</Button>
@@ -86,7 +67,11 @@ ReactDOM.render(
         </ButtonGroup>
 
         <p>Togglable Button Group</p>
-        <ButtonGroupContainer />
+        <ButtonGroup>
+            <Button togglable icon="bold" />
+            <Button togglable icon="italic" />
+            <Button togglable icon="underline" />
+        </ButtonGroup>
     </div>,
     document.getElementById('app')
 );
