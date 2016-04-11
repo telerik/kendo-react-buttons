@@ -16,7 +16,10 @@ The ButtonGroup is a component that is part of the Buttons `npm` package of the 
 
 ![Template of the Kendo UI ButtonGroup for React](images/buttongroup.png)
 
-*1. ButtonGroup interaction states | 2. Default Buttons | 3. Primary Buttons | 4. ButtonGroup with togglable Buttons*
+1. ButtonGroup interaction states
+2. Default Buttons
+3. Primary Buttons
+4. ButtonGroup with togglable Buttons
 
 ## Demos
 
