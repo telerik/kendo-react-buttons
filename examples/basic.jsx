@@ -12,7 +12,7 @@ class ButtonContainer extends React.Component {
             disabled: false
         };
     }
-    onClick = () => {
+    onClick() {
         this.setState({ disabled: !this.state.disabled });
     }
     render() {
