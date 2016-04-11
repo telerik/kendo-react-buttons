@@ -25,10 +25,26 @@ For more information on forthcoming Buttons package features and components, ref
 The Button allows users to achieve a UI functionality by clicking on it.
 
 ```html-preview
-    //code
+    <div id="app"></div>
 ```
 ```jsx
+    class ButtonContainer extends React.Component {
+        onClick = () => {
+            //handle event
+        }
+        render() {
+            return (
+                <div>
+                    <KendoReactButtons.Button onClick={this.onClick}>My Button</KendoReactButtons.Button>
+                </div>
+            );
+        }
+    }
 
+    ReactDOM.render(
+        <ButtonContainer />,
+        document.getElementById('app')
+    );    
 ```
 
 For more examples and available configuration options, refer to the [Button documentation section](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/index.md).
@@ -38,10 +54,17 @@ For more examples and available configuration options, refer to the [Button docu
 The ButtonGroup is a group of more than one Kendo UI Buttons for React.
 
 ```html-preview
-    //code
+    <div id="app"></div>
 ```
 ```jsx
-
+    ReactDOM.render(
+        <KendoReactButtons.ButtonGroup>
+            <KendoReactButtons.Button>Button 1</KendoReactButtons.Button>
+            <KendoReactButtons.Button>Button 2</KendoReactButtons.Button>
+            <KendoReactButtons.Button>Button 3</KendoReactButtons.Button>
+        </KendoReactButtons.ButtonGroup>,
+        document.getElementById('app')
+    );    
 ```
 
 For more examples and available configuration options, refer to the [ButtonGroup documentation section](https://github.com/telerik/kendo-react-buttons/blob/master/docs/buttongroup/index.md).
@@ -52,8 +75,6 @@ The React Buttons are published as a [public scoped NPM package](https://docs.np
 
 Install it using NPM:
 
-//change acc to this package
-
 ```sh
 npm install --save @telerik/kendo-react-buttons;
 ```
@@ -62,11 +83,12 @@ Once installed, import the module:
 
 ```jsx
 // ES2015 module syntax
-import {Slider} from 'kendo-react-buttons';
+import * as KendoReactButtons from 'kendo-react-buttons';
 ```
 ```jsx
 // CommonJS format
 var Button = require('kendo-react-buttons').Button;
+var ButtonGroup = require('kendo-react-buttons').ButtonGroup;
 ```
 
 ## Browser Support
