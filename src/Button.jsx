@@ -47,12 +47,12 @@ class Button extends React.Component {
             this.props.onClick();
         }
     }
-    handleMouseDown() {
+    handleMouseDown(event) {
         if (this.props.disabled) {
             return;
         }
         if (this.props.onMouseDown) {
-            this.props.onMouseDown();
+            this.props.onMouseDown(event);
         }
     }
     handleKeyPress(eventData) {
