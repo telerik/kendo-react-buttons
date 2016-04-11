@@ -83,6 +83,38 @@ describe('Button', () => {
         result = shallow(<Button tabIndex={4}>test</Button>);
         expect(result.prop('tabIndex')).toBe(4);
     });
+
+    it('should not render icon element if no icon is specified', () => {
+        result = shallow(<Button>test</Button>);
+        expect(result.find('.k-icon').length).toEqual(0);
+    });
+
+    it('should render img tag based on imageUrl', () => {
+        const url = "foo.png";
+        result = shallow(<Button imageUrl={url}>test</Button>);
+
+        let image = result.find('img');
+        expect(image.length).toEqual(1);
+        expect(image.prop('src')).toEqual(url);
+    });
+
+    it('should render icon classes based on icon', () => {
+        result = shallow(<Button icon="arrow-s">test</Button>);
+
+        let icon = result.find('.k-icon');
+        expect(icon.length).toEqual(1);
+        expect(icon.hasClass('k-i-arrow-s')).toBe(true);
+    });
+
+    it('should render iconClass directly', () => {
+        result = shallow(<Button iconClass="fa fa-key">test</Button>);
+
+        let icon = result.find('span').first();
+        expect(icon.length).toEqual(1);
+        expect(icon.hasClass('k-icon')).toBe(false);
+        expect(icon.hasClass('fa')).toBe(true);
+        expect(icon.hasClass('fa-key')).toBe(true);
+    });
 });
 
 describe('Button ARIA', () => {
