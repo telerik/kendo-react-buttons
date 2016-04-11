@@ -12,9 +12,11 @@ The Kendo UI Button is a React component that allows the user to achieve a UI fu
 
 The Button is a component that is part of the Buttons `npm` package of the Kendo UI suite for React.
 
-**Figure 1: A Button template displaying text and a sprite icon as a background image**
+**Figure 1: A Button template component for React**
 
-//a template screen to be added - Vasko
+![Template of the Kendo UI Button for React](images/button.png)
+
+*1. Button interaction states | 2. Default Button | 3. Primary Button | 4. Button with an Icon | 5. Icon-Only Button*
 
 ## Demos
 
