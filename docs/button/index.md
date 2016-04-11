@@ -16,7 +16,7 @@ The Button is a component that is part of the Buttons `npm` package of the Kendo
 
 ![Template of the Kendo UI Button for React](images/button.png)
 
-*1. Button interaction states | 2. Default Button | 3. Primary Button | 4. Button with an Icon | 5. Icon-Only Button*
+*1. Button interaction states &mdash; 2. Default Button &mdash; 3. Primary Button &mdash; 4. Button with an Icon &mdash; 5. Icon-Only Button*
 
 ## Demos
 
