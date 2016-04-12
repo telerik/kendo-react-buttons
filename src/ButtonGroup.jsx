@@ -5,6 +5,7 @@ import styles from '@telerik/kendo-theme-default/styles/button/main';
 
 const propTypes = {
     children: PropTypes.arrayOf(PropTypes.element),
+    className: PropTypes.string,
     disabled: PropTypes.bool
 };
 
@@ -33,7 +34,7 @@ class ButtonGroup extends React.Component {
         const groupClasses = classNames({
             [styles['button-group']]: true,
             [styles['state-disabled']]: this.props.disabled
-        });
+        }, this.props.className);
         const groupProps = {
             className: groupClasses,
             disabled: this.props.disabled,

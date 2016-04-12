@@ -48,4 +48,15 @@ describe('ButtonGroup', () => {
 
         expect(result.prop('aria-disabled')).toBe(true);
     });
+
+    it('should accept custom classes', () => {
+        result = shallow(
+            <ButtonGroup className="foo">
+               <Button>foo</Button>
+               <Button>bar</Button>
+            </ButtonGroup>
+        );
+
+        expect(result.hasClass('foo')).toBe(true);
+    });
 });

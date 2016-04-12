@@ -115,6 +115,11 @@ describe('Button', () => {
         expect(icon.hasClass('fa')).toBe(true);
         expect(icon.hasClass('fa-key')).toBe(true);
     });
+
+    it('should accept custom classes', () => {
+        result = shallow(<Button className="foo" />);
+        expect(result.hasClass('foo')).toBe(true);
+    });
 });
 
 describe('Button ARIA', () => {
