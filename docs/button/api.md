@@ -48,6 +48,14 @@ Provides visual styling indicating if the Button is active. By default, `togglab
 
 Attaches an event handler to the Button.
 
+#### onMouseDown `function`
+
+Attaches an event handler to the Button.
+
+#### onMouseUp `function`
+
+Attaches an event handler to the Button.
+
 ## Set Tab Indexes
 
 #### tabIndex `number`

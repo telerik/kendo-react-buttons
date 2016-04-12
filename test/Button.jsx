@@ -67,10 +67,38 @@ describe('Button', () => {
         expect(spy).toHaveBeenCalled();
     });
 
+    it('should execute mousedown handler', () => {
+        let spy = jasmine.createSpy('spy');
+        result = shallow(<Button onMouseDown={spy}>test</Button>);
+        result.simulate('mousedown');
+        expect(spy).toHaveBeenCalled();
+    });
+
+    it('should execute mouseup handler', () => {
+        let spy = jasmine.createSpy('spy');
+        result = shallow(<Button onMouseUp={spy}>test</Button>);
+        result.simulate('mouseup');
+        expect(spy).toHaveBeenCalled();
+    });
+
     it('should **not** execute click handler on click if component is disabled', () => {
         let spy = jasmine.createSpy('spy');
         result = shallow(<Button disabled onClick={spy}>test</Button>);
         result.simulate('click');
+        expect(spy).not.toHaveBeenCalled();
+    });
+
+    it('should **not** execute mousedown handler if component is disabled', () => {
+        let spy = jasmine.createSpy('spy');
+        result = shallow(<Button disabled onMouseUp={spy}>test</Button>);
+        result.simulate('mousedown');
+        expect(spy).not.toHaveBeenCalled();
+    });
+
+    it('should **not** execute mouseup handler if component is disabled', () => {
+        let spy = jasmine.createSpy('spy');
+        result = shallow(<Button disabled onMouseUp={spy}>test</Button>);
+        result.simulate('mouseup');
         expect(spy).not.toHaveBeenCalled();
     });
 

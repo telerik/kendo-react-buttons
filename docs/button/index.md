@@ -173,7 +173,7 @@ To see the full list of Kendo UI web font icons, refer to the [related article](
 
 ### Toggle
 
-The Button supports also visual styling that indicates if it is active. This functionality is set through the [`togglable`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#togglable-boolean) option. By default, `togglable` is set to `false`.
+The Button supports also visual styling that indicates if it is active. This functionality is set through the [`togglable`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#togglable-boolean) property. By default, `togglable` is set to `false`.
 
 ```html
     <div id="app"></div>
@@ -187,7 +187,7 @@ The Button supports also visual styling that indicates if it is active. This fun
 
 ### Handle Events
 
-Through setting the [`onClick`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#onclick-function) option, an event handler can be attached to the Button.
+Through setting the [`onClick`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#onclick-function) property, an event handler can be attached to the Button. Disabled Buttons will not execute the attached event handler.
 
 ```html
     <div id="app"></div>
@@ -219,9 +219,41 @@ Through setting the [`onClick`](https://github.com/telerik/kendo-react-buttons/b
     );
 ```
 
+Same goes for the [`onMouseDown`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#onmousedown-function) and [`onMouseUp`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#onmouseup-function) properties.
+
+```html
+    <div id="app"></div>
+```
+```jsx
+    class ButtonContainer extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                disabled: false
+            };
+        }
+        toggleButton = () => {
+            this.setState({ disabled: !this.state.disabled });
+        }
+        render() {
+            return (
+                <div>
+                    <KendoReactButtons.Button onMouseDown={this.toggleButton} onMouseUp={this.toggleButton}>Button 1</KendoReactButtons.Button>
+                    <KendoReactButtons.Button disabled={this.state.disabled}>Button 2</KendoReactButtons.Button>
+                </div>
+            );
+        }
+    }
+
+    ReactDOM.render(
+        <ButtonContainer />,
+        document.getElementById('app')
+    );
+```
+
 ### Set Tab Indexes
 
-By setting the [`tabIndex`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#tabindex-number) option, you indicate the order in which buttons are selected through the `Tab` key.
+By setting the [`tabIndex`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#tabindex-number) property, you indicate the order in which buttons are selected through the `Tab` key.
 
 ```html
     <div id="app"></div>
@@ -250,7 +282,7 @@ Below is the list with the keyboard shortcuts the Button supports.
 
 ## Accessibility
 
-The Button is WAI ARIA-accessible through the `Tab` key. The `aria-disabled` option defines the accessibility setting when an attribute is disabled.
+The Button is WAI ARIA-accessible through the `Tab` key. The `aria-disabled` property defines the accessibility setting when an attribute is disabled.
 
 ## Suggested Links
 

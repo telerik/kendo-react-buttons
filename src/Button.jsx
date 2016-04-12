@@ -26,6 +26,7 @@ const propTypes = {
     imageUrl: PropTypes.string,
     onClick: PropTypes.func,
     onMouseDown: PropTypes.func,
+    onMouseUp: PropTypes.func,
     primary: PropTypes.bool,
     iconClass: PropTypes.string,
     tabIndex: PropTypes.number,
@@ -41,6 +42,7 @@ class Button extends React.Component {
 
         this.onClick = this.handleClick.bind(this);
         this.onMouseDown = this.handleMouseDown.bind(this);
+        this.onMouseUp = this.handleMouseUp.bind(this);
         this.onKeyPress = this.handleKeyPress.bind(this);
     }
     handleClick() {
@@ -60,6 +62,14 @@ class Button extends React.Component {
         }
         if (this.props.onMouseDown) {
             this.props.onMouseDown(event);
+        }
+    }
+    handleMouseUp(event) {
+        if (this.props.disabled) {
+            return;
+        }
+        if (this.props.onMouseUp) {
+            this.props.onMouseUp(event);
         }
     }
     handleKeyPress(eventData) {
@@ -83,6 +93,7 @@ class Button extends React.Component {
             disabled: this.props.disabled,
             onClick: this.onClick,
             onMouseDown: this.onMouseDown,
+            onMouseUp: this.onMouseUp,
             onKeyPress: this.handleKeyPress,
             'aria-disabled': this.props.disabled
         };
