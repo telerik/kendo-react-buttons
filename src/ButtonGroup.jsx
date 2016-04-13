@@ -10,9 +10,6 @@ const propTypes = {
 };
 
 class ButtonGroup extends React.Component {
-    constructor() {
-        super();
-    }
     mapButtons(props) {
         return React.Children.map(props, (child, index) => {
             if (React.isValidElement(child)) {

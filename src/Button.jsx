@@ -7,9 +7,9 @@ function iconElement({ imageUrl, icon, iconClass }) {
         return (<img className={styles.image} src={imageUrl} />);
     } else if (icon) {
         const iconClasses = classNames(styles.icon, styles['i-' + icon]);
-        return (<span className={iconClasses}></span>);
+        return (<span className={iconClasses} />);
     } else if (iconClass) {
-        return (<span className={iconClass}></span>);
+        return (<span className={iconClass} />);
     }
 
     return null;
@@ -34,8 +34,16 @@ const propTypes = {
 };
 
 class Button extends React.Component {
+
+    static defaultProps = {
+        onClick: function() {},
+        onMouseDown: function() {},
+        onMouseUp: function() {}
+    };
+
     constructor(props) {
         super(props);
+
         this.state = {
             active: false
         };
@@ -52,25 +60,22 @@ class Button extends React.Component {
         if (this.props.togglable) {
             this.setState({ active: !this.state.active });
         }
-        if (this.props.onClick) {
-            this.props.onClick();
-        }
+
+        this.props.onClick();
     }
     handleMouseDown(event) {
         if (this.props.disabled) {
             return;
         }
-        if (this.props.onMouseDown) {
-            this.props.onMouseDown(event);
-        }
+
+        this.props.onMouseDown(event);
     }
     handleMouseUp(event) {
         if (this.props.disabled) {
             return;
         }
-        if (this.props.onMouseUp) {
-            this.props.onMouseUp(event);
-        }
+
+        this.props.onMouseUp(event);
     }
     handleKeyPress(eventData) {
         if (eventData.charCode === 13 || eventData.charCode === 32) {
