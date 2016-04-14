@@ -17,7 +17,7 @@ This repository contains the source code and documentation of the Kendo UI compo
 
 The package includes the Button and ButtonGroup components.
 
-For more information on forthcoming Buttons package features and components, refer to the [Roadmap](...).
+For more information on upcoming Buttons package features and components, refer to the [Roadmap](...).
 
 ## Basic Usage
 
@@ -72,7 +72,7 @@ For more examples and available configuration options, refer to the [ButtonGroup
 
 ## Installation
 
-The React Buttons are published as a [public scoped NPM package](https://docs.npmjs.com/misc/scope) in the [Telerik organization](https://www.npmjs.com/~telerik) in `http://npmjs.org/`.
+The React Buttons are published as a [public scoped NPM package](https://docs.npmjs.com/misc/scope) in the [Telerik organization](https://www.npmjs.com/~telerik) in http://npmjs.org/.
 
 Install it using NPM:
 
