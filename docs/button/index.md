@@ -126,7 +126,7 @@ The Kendo UI Button for React enhances textual content by providing the option t
 
 **Use `icon`**
 
-The [Kendo UI built-in icons](http://demos.telerik.com/kendo-ui/styling/icons) are applied through the [`icon`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#icon-string) property and displayed as the background of the Button component.
+The [Kendo UI built-in icons](http://demos.telerik.com/kendo-ui/styling/icons) are applied through the [`icon`]({% slug api_button_kendouiforreact %}#icon-string) property and displayed as the background of the Button component.
 
 ```html
     <div id="app"></div>
@@ -140,7 +140,7 @@ The [Kendo UI built-in icons](http://demos.telerik.com/kendo-ui/styling/icons) a
 
 **Use `imageUrl`**
 
-Image icons are applied through the [`imageUrl`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#imageurl-string) property.
+Image icons are applied through the [`imageUrl`]({% slug api_button_kendouiforreact %}#imageurl-string) property.
 
 ```html
     <div id="app"></div>
@@ -154,7 +154,7 @@ Image icons are applied through the [`imageUrl`](https://github.com/telerik/kend
 
 **Use `iconClass`**
 
-FontAwesome or other font icons also can reside in a Kendo UI Button for React. They are implemented by setting the required third-party CSS classes through the [`iconClass`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#iconclass-string) property.
+FontAwesome or other font icons also can reside in a Kendo UI Button for React. They are implemented by setting the required third-party CSS classes through the [`iconClass`]({% slug api_button_kendouiforreact %}#iconclass-string) property.
 
 ```html
     <!--font awesome-->
@@ -173,7 +173,7 @@ To see the full list of Kendo UI web font icons, refer to the [related article](
 
 ### Toggle
 
-The Button supports also visual styling that indicates if it is active. This functionality is set through the [`togglable`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#togglable-boolean) property. By default, `togglable` is set to `false`.
+The Button supports also visual styling that indicates if it is active. This functionality is set through the [`togglable`]({% slug api_button_kendouiforreact %}#togglable-boolean) property. By default, `togglable` is set to `false`.
 
 ```html
     <div id="app"></div>
@@ -187,7 +187,7 @@ The Button supports also visual styling that indicates if it is active. This fun
 
 ### Handle Events
 
-Through setting the [`onClick`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#onclick-function) property, an event handler can be attached to the Button. Disabled Buttons will not execute the attached event handler.
+Through setting the [`onClick`]({% slug api_button_kendouiforreact %}#onclick-function) property, an event handler can be attached to the Button. Disabled Buttons will not execute the attached event handler.
 
 ```html
     <div id="app"></div>
@@ -219,7 +219,7 @@ Through setting the [`onClick`](https://github.com/telerik/kendo-react-buttons/b
     );
 ```
 
-Same goes for the [`onMouseDown`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#onmousedown-function) and [`onMouseUp`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#onmouseup-function) properties.
+Same goes for the [`onMouseDown`]({% slug api_button_kendouiforreact %}#onmousedown-function) and [`onMouseUp`]({% slug api_button_kendouiforreact %}#onmouseup-function) properties.
 
 ```html
     <div id="app"></div>
@@ -253,7 +253,7 @@ Same goes for the [`onMouseDown`](https://github.com/telerik/kendo-react-buttons
 
 ### Set Tab Indexes
 
-By setting the [`tabIndex`](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md#tabindex-number) property, you indicate the order in which buttons are selected through the `Tab` key.
+By setting the [`tabIndex`]({% slug api_button_kendouiforreact %}#tabindex-number) property, you indicate the order in which buttons are selected through the `Tab` key.
 
 ```html
     <div id="app"></div>
@@ -286,4 +286,4 @@ The Button is WAI ARIA-accessible through the `Tab` key. The `aria-disabled` pro
 
 ## Suggested Links
 
-* [Client-Side API Reference for the Kendo UI Button Component](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md)
+* [Client-Side API Reference for the Kendo UI Button Component]({% slug api_button_kendouiforreact %})
