@@ -6,7 +6,7 @@ slug: overview_buttons_kendouiforreact
 position: 1
 ---
 
-# Buttons Overview (draft)
+# Buttons Overview
 
 Buttons provide a clickable UI functionality with arbitrary content. The Kendo UI for React Buttons package includes the Kendo UI for React Button and ButtonGroup components.
 
@@ -18,7 +18,7 @@ Apart from the consistent Kendo UI styling they support, both the Button and But
 
 Articles on Kendo UI Buttons components for React:
 
-* [Get Started with the Button](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/index.md)
-* [Client-Side Button API](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md)
-* [Get Started with the ButtonGroup](https://github.com/telerik/kendo-react-buttons/blob/master/docs/buttongroup/index.md)
-* [Client-Side ButtonGroup API](https://github.com/telerik/kendo-react-buttons/blob/master/docs/buttongroup/api.md)
+* [Get Started with the Button]({% slug overview_button_kendouiforreact %)
+* [Client-Side Button API]({% slug api_button_kendouiforreact %)
+* [Get Started with the ButtonGroup]({% slug overview_buttongroup_kendouiforreact %)
+* [Client-Side ButtonGroup API]({% slug api_buttongroup_kendouiforreact %)
