@@ -8,7 +8,9 @@ position: 1
 
 # Button Overview
 
-The Kendo UI Button is a React component that allows the user to achieve a UI functionality by clicking on it. The appearance of the Button can be configured so as to show textual content only, or to display a predefined icon, an image, or a custom icon, or yet a combination of textual and image content. Buttons can be enabled or disabled, and allow the attaching of click events to them.
+The Kendo UI Button is a React component that allows the user to achieve a UI functionality by clicking on it. 
+
+The appearance of the Button can be configured so as to show textual content only, or to display a predefined icon, an image, or a custom icon, or yet a combination of textual and image content. Buttons can be enabled or disabled, and allow the attaching of click events to them.
 
 The Button is a component that is part of the Buttons `npm` package of the Kendo UI suite for React.
 
