@@ -16,7 +16,7 @@ Apart from the consistent Kendo UI styling they support, both the Button and But
 
 ## Suggested Links
 
-Articles on Kendo UI Buttons components for React:
+Articles on the Kendo UI Buttons components for React:
 
 * [Get Started with the Button]({% slug overview_button_kendouiforreact %)
 * [Client-Side Button API]({% slug api_button_kendouiforreact %)
