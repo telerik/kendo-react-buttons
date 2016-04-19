@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Overview | Kendo UI Buttons for React
-description: "Learn which Kendo UI components for React the Buttons package delivers."
+description: "Learn about the Kendo UI components for React which are delivered by the Buttons package."
 slug: overview_buttons_kendouiforreact
 position: 1
 ---
