@@ -1,12 +1,12 @@
 ---
-title: Client-Side API
-page_title: Client-Side API | Kendo UI Button for React
-description: "Configure and customize the Kendo UI Button for React through its client-side API reference."
+title: API
+page_title: API | Kendo UI Button for React
+description: "Configure and customize the Kendo UI Button for React through its API reference."
 slug: api_button_kendouiforreact
 position: 2
 ---
 
-# Button Client-Side API
+# Button API
 
 Represents the Kendo UI Button component for React.
 
