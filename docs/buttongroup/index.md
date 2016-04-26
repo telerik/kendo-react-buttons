@@ -93,4 +93,4 @@ The ButtonGroup is WAI ARIA-accessible through the `Tab` key. The `aria-disabled
 
 ## Suggested Links
 
-* [Client-Side API Reference for the Kendo UI ButtonGroup Component]({% slug api_buttongroup_kendouiforreact %})
+* [API Reference of the ButtonGroup Component]({% slug api_buttongroup_kendouiforreact %})
