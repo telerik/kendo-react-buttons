@@ -271,7 +271,7 @@ By setting the [`tabIndex`]({% slug api_button_kendouiforreact %}#tabindex-numbe
     );
 ```
 
-For detailed information on the Kendo UI Button configuration for React, refer to the [Button client-side API documentation]({% slug api_button_kendouiforreact %}).
+For detailed information on the Kendo UI Button configuration for React, refer to the [Button API documentation]({% slug api_button_kendouiforreact %}).
 
 ## Keyboard Navigation
 
