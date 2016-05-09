@@ -12,7 +12,7 @@ The Kendo UI ButtonGroup for React is a container for two or more Kendo UI Butto
 
 The ButtonGroup is a component that is part of the Buttons `npm` package of the Kendo UI suite for React.
 
-**Figure 1: A ButtonGroup template displaying text and an icon as a background image**
+**Figure 1: A template of the ButtonGroup for React, displaying text and an icon as a background image**
 
 ![Template of the Kendo UI ButtonGroup for React](images/buttongroup.png)
 
