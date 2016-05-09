@@ -16,4 +16,4 @@ Represents the Kendo UI ButtonGroup component for React.
 
 Disables all Button within the ButtonGroup. By default, the component is enabled.
 
-For the client-side API of the Button, refer to its [configuration options article](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md).
+For the API of the Button, refer to its [configuration options article](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/api.md).
