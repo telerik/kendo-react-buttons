@@ -84,7 +84,7 @@ The example below demonstrates the default setup of a Kendo UI Button for React.
 
 ### Enable and Disable
 
-By default, the Kendo UI Button for React is enabled.
+By default, the Kendo UI Button for React is enabled. 
 
 ```html-preview
     <div id="app"></div>
@@ -96,7 +96,7 @@ By default, the Kendo UI Button for React is enabled.
     );
 ```
 
-When disabled, the Button is displayed but does not operate.
+When disabled, the Button is displayed, but does not operate.
 
 ```html-preview
     <div id="app"></div>
@@ -110,7 +110,7 @@ When disabled, the Button is displayed but does not operate.
 
 ### Set Primary Buttons
 
-Depending on your project, the Button enables you to add visual weight to it and make it primary.
+The Button enables you to add visual weight to it and make it primary.
 
 ```html-preview
     <div id="app"></div>
@@ -171,11 +171,11 @@ FontAwesome or other font icons also can reside in a Kendo UI Button for React. 
     );
 ```
 
-To see the full list of Kendo UI web font icons, refer to the [related article](http://docs.telerik.com/kendo-ui/styles-and-layout/icons-web).
+To see the full list of Kendo UI web font icons, refer to the article on [styles and layout](http://docs.telerik.com/kendo-ui/styles-and-layout/icons-web).
 
 ### Toggle
 
-The Button supports also visual styling that indicates if it is active. This functionality is set through the [`togglable`]({% slug api_button_kendouiforreact %}#togglable-boolean) property. By default, `togglable` is set to `false`.
+The Button supports visual styling that indicates if it is active. By default, the [`togglable`]({% slug api_button_kendouiforreact %}#togglable-boolean) property is set to `false`. To add visual styles, set it to `true`.
 
 ```html
     <div id="app"></div>
