@@ -14,7 +14,7 @@ The appearance of the Button can be configured so as to show textual content onl
 
 The Button is a component that is part of the Buttons `npm` package of the Kendo UI suite for React.
 
-**Figure 1: A Button template component for React**
+**Figure 1: A template of the Button for React**
 
 ![Template of the Kendo UI Button for React](images/button.png)
 
