@@ -13,7 +13,7 @@
 
 ## Overview
 
-This repository contains the source code and documentation of the Kendo UI Buttons components for React.
+This repository contains the source code and documentation of the Kendo UI Buttons package for React.
 
 Currently, the package includes the following components:
 
@@ -22,7 +22,7 @@ Currently, the package includes the following components:
 
 ## Basic Usage
 
-### Kendo UI Button for React
+### Kendo UI Button 
 
 The Button allows users to achieve a UI functionality by clicking on it.
 
@@ -51,7 +51,7 @@ The Button allows users to achieve a UI functionality by clicking on it.
 
 For more examples and available configuration options, refer to the [Button documentation](https://github.com/telerik/kendo-react-buttons/blob/master/docs/button/index.md).
 
-### Kendo UI ButtonGroup for React
+### Kendo UI ButtonGroup 
 
 The ButtonGroup is a group of more than one Buttons.
 
@@ -73,7 +73,7 @@ For more examples and available configuration options, refer to the [ButtonGroup
 
 ## Installation
 
-The Buttons are published as a [public scoped NPM package](https://docs.npmjs.com/misc/scope) in the [Telerik organization](https://www.npmjs.com/~telerik) in http://npmjs.org/.
+The Buttons components are published as a [public scoped NPM package](https://docs.npmjs.com/misc/scope) in the [Telerik organization](https://www.npmjs.com/~telerik) in http://npmjs.org/.
 
 Install it using NPM.
 
@@ -95,7 +95,7 @@ var ButtonGroup = require('kendo-react-buttons').ButtonGroup;
 
 ## Browser Support
 
-The Buttons components support all browsers supported by the React framework&mdash;Internet Explorer 9 and later versions.
+The Buttons components work in all browsers supported by the React framework&mdash;Internet Explorer 9 and later versions.
 
 ## Glossary
 
