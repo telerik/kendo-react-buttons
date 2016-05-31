@@ -12,7 +12,7 @@ The Kendo UI Button is a React component that allows the user to achieve a UI fu
 
 The appearance of the Button can be configured so as to show textual content only, or to display a predefined icon, an image, or a custom icon, or yet a combination of textual and image content. Buttons can be enabled or disabled, and allow the attaching of click events to them.
 
-The Button is a component that is part of the Buttons `npm` package of the Kendo UI suite for React.
+The Button is part of the [kendo-react-buttons npm package](https://www.npmjs.com/package/@telerik/kendo-react-buttons).
 
 **Figure 1: A template of the Button for React**
 
@@ -27,8 +27,6 @@ The Button is a component that is part of the Buttons `npm` package of the Kendo
 ## Demos
 
 ### Default Setup
-
-The example below demonstrates the default setup of a Kendo UI Button for React.
 
 ```html-preview
     <!--font awesome-->
@@ -84,7 +82,7 @@ The example below demonstrates the default setup of a Kendo UI Button for React.
 
 ### Enable and Disable
 
-By default, the Kendo UI Button for React is enabled. 
+By default, the Button is enabled. 
 
 ```html-preview
     <div id="app"></div>
@@ -124,11 +122,11 @@ The Button enables you to add visual weight to it and make it primary.
 
 ### Add Icons
 
-The Kendo UI Button for React enhances textual content by providing the option to add icons&mdash;image, predefined, or custom ones. Taking web standards into consideration, it is better to use a background image as the icon does not represent structural content, but is simply decoration.
+The Button enhances textual content by providing the option to add icons&mdash;image, predefined, or custom ones. Taking web standards into consideration, it is better to use a background image as the icon does not represent structural content, but is simply decoration.
 
 **Use `icon`**
 
-The [Kendo UI built-in icons](http://demos.telerik.com/kendo-ui/styling/icons) are applied through the [`icon`]({% slug api_button_kendouiforreact %}#icon-string) property and displayed as the background of the Button component.
+The [Kendo UI built-in icons](http://demos.telerik.com/kendo-ui/styling/icons) are applied through the [`icon`]({% slug api_button_kendouiforreact %}#icon-string) property and displayed as the background of the Button.
 
 ```html
     <div id="app"></div>
@@ -156,7 +154,7 @@ Image icons are applied through the [`imageUrl`]({% slug api_button_kendouiforre
 
 **Use `iconClass`**
 
-FontAwesome or other font icons also can reside in a Kendo UI Button for React. They are implemented by setting the required third-party CSS classes through the [`iconClass`]({% slug api_button_kendouiforreact %}#iconclass-string) property.
+FontAwesome or other font icons also can reside in a Button. They are implemented by setting the required third-party CSS classes through the [`iconClass`]({% slug api_button_kendouiforreact %}#iconclass-string) property.
 
 ```html
     <!--font awesome-->
@@ -189,7 +187,7 @@ The Button supports visual styling that indicates if it is active. By default, t
 
 ### Handle Events
 
-Through setting the [`onClick`]({% slug api_button_kendouiforreact %}#onclick-function) property, an event handler can be attached to the Button. Disabled Buttons will not execute the attached event handler.
+Through setting the [`onClick`]({% slug api_button_kendouiforreact %}#onclick-function) property, an event handler can be attached to the Button. Disabled Buttons do not execute the attached event handler.
 
 ```html
     <div id="app"></div>
@@ -271,7 +269,7 @@ By setting the [`tabIndex`]({% slug api_button_kendouiforreact %}#tabindex-numbe
     );
 ```
 
-For detailed information on the Kendo UI Button configuration for React, refer to the [Button API documentation]({% slug api_button_kendouiforreact %}).
+For detailed information on the Button configuration, refer to its [API documentation]({% slug api_button_kendouiforreact %}).
 
 ## Keyboard Navigation
 
@@ -288,4 +286,4 @@ The Button is WAI ARIA-accessible through the `Tab` key. The `aria-disabled` pro
 
 ## Suggested Links
 
-* [API Reference of the Button Component]({% slug api_button_kendouiforreact %})
+* [API Reference of the Button]({% slug api_button_kendouiforreact %})
