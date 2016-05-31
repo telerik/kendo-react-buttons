@@ -10,7 +10,7 @@ position: 1
 
 The Kendo UI ButtonGroup for React is a container for two or more Kendo UI Button components. Each Button can be separately configured depending on your project requirements and according to the [Button API]({% slug api_button_kendouiforreact %}).
 
-The ButtonGroup is a component that is part of the Buttons `npm` package of the Kendo UI suite for React.
+The ButtonGroup is part of the [kendo-react-buttons npm package](https://www.npmjs.com/package/@telerik/kendo-react-buttons).
 
 **Figure 1: A template of the ButtonGroup for React, displaying text and an icon as a background image**
 
@@ -24,8 +24,6 @@ The ButtonGroup is a component that is part of the Buttons `npm` package of the 
 ## Demos
 
 ### Default Setup
-
-The example below demonstrates how to configure a togglable Kendo UI ButtonGroup for React.
 
 ```html-preview
     <div id="app"></div>
@@ -45,7 +43,7 @@ The example below demonstrates how to configure a togglable Kendo UI ButtonGroup
 
 ### Enable and Disable
 
-By default, the Kendo UI ButtonGroup for React is enabled.
+By default, the ButtonGroup is enabled.
 
 ```html
     <div id="app"></div>
@@ -77,7 +75,7 @@ When disabled, the ButtonGroup is displayed, but does not function.
     );
 ```
 
-For detailed information on the Kendo UI ButtonGroup configuration for React, refer to the [ButtonGroup client-side API documentation]({% slug api_buttongroup_kendouiforreact %}).
+For detailed information on the ButtonGroup configuration, refer to its [API documentation]({% slug api_buttongroup_kendouiforreact %}).
 
 ## Keyboard Navigation
 
@@ -93,4 +91,4 @@ The ButtonGroup is WAI ARIA-accessible through the `Tab` key. The `aria-disabled
 
 ## Suggested Links
 
-* [API Reference of the ButtonGroup Component]({% slug api_buttongroup_kendouiforreact %})
+* [API Reference of the ButtonGroup]({% slug api_buttongroup_kendouiforreact %})
