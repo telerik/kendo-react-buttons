@@ -8,7 +8,7 @@ position: 1
 
 # Buttons Overview
 
-Buttons provide a clickable UI functionality with arbitrary content. The Kendo UI for React Buttons package includes the Kendo UI Button and ButtonGroup components for React.
+Buttons provide a clickable UI functionality with arbitrary content. Currently, the Buttons package includes the Kendo UI Button and ButtonGroup components for React.
 
 The Button represents an individual component instance of a button on a page, while the ButtonGroup contains a number of button instances that can be initialized and controlled simultaneously.  
 
@@ -16,7 +16,7 @@ Apart from the consistent Kendo UI styling they support, both the Button and But
 
 ## Suggested Links
 
-Articles on the Kendo UI Buttons components for React:
+Articles on the Kendo UI Buttons package for React:
 
 * [Get Started with the Button]({% slug overview_button_kendouiforreact %})
 * [Get Started with the ButtonGroup]({% slug overview_buttongroup_kendouiforreact %})
