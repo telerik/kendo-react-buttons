@@ -92,3 +92,4 @@ The ButtonGroup is WAI ARIA-accessible through the `Tab` key. The `aria-disabled
 ## Suggested Links
 
 * [API Reference of the ButtonGroup]({% slug api_buttongroup_kendouiforreact %})
+* [API Reference of the Button]({% slug api_button_kendouiforreact %})
