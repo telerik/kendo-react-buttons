@@ -21,8 +21,8 @@ The Button is part of the [kendo-react-buttons npm package](https://www.npmjs.co
 1. Button interaction states
 2. Default Button
 3. Primary Button
-4. Button with an Icon
-5. Icon-Only Button
+4. Button with an icon
+5. Icon-only Button
 
 ## Demos
 
@@ -219,7 +219,7 @@ Through setting the [`onClick`]({% slug api_button_kendouiforreact %}#onclick-fu
     );
 ```
 
-Same goes for the [`onMouseDown`]({% slug api_button_kendouiforreact %}#onmousedown-function) and [`onMouseUp`]({% slug api_button_kendouiforreact %}#onmouseup-function) properties.
+The same goes for the [`onMouseDown`]({% slug api_button_kendouiforreact %}#onmousedown-function) and [`onMouseUp`]({% slug api_button_kendouiforreact %}#onmouseup-function) properties.
 
 ```html
     <div id="app"></div>
