@@ -1,6 +1,8 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![npm version](https://badge.fury.io/js/%40telerik%2Fkendo-react-buttons.svg)](https://badge.fury.io/js/%40telerik%2Fkendo-react-buttons)
 
+>This package is now deprecated and has been archived. For the current version of the Kendo UI Buttons for React, refer to the official [website](https://www.telerik.com/kendo-react-ui/components/)
+
 # Kendo UI Buttons for React
 
 * [Overview](https://github.com/telerik/kendo-react-buttons#overview)
